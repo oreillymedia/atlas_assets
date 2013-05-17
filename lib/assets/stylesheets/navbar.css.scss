@@ -1,0 +1,65 @@
+.navbar {
+	background-color: #ac2f3c;
+	color: #FFF;
+	font-family: Lato, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.navbar a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Brand
+------------------------------------------------------------------ */
+
+.navbar .brand {
+  float: left;
+  display: block;
+  padding: 10px 20px 10px 0px;
+}
+
+/* Navbar menu 
+------------------------------------------------------------------ */
+
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar .nav.pull-right {
+  float: right;
+  margin-right: 0;
+}
+
+.navbar .nav > li {
+  float: left;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  display: block;
+  padding: 10px 20px 10px;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  background-color: #91323b;
+}
+
+.navbar .nav #profile-link {
+  font-size: 13px;
+}
+
+.navbar .nav #logout-link {
+  background-color: #91323b;
+  padding-left: 15px;
+  padding-right: 15px;
+}

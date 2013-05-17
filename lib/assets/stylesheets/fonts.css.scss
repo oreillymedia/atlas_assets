@@ -1,0 +1,47 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom: 7px;
+	color: #242424;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+h3 {
+  line-height: 27px;
+  font-size: 18px;
+}
+
+h4, h5, h6 {
+  line-height: 18px;
+}
+
+a {
+  color: #2c7db1;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #0280d1;
+}
+
+/* Heading split
+--------------------------------------------------------- */
+
+.heading-split h1, .heading-split h2, .heading-split h3, .heading-split > div {
+  display: inline-block;
+}

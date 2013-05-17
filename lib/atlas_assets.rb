@@ -1,5 +1,3 @@
-require "atlas_assets/version"
-
 module AtlasAssets
 	VERSION = "0.0.1"
 end
