@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'atlas_assets/version'
+require 'atlas_assets'
 
 Gem::Specification.new do |gem|
   gem.name          = "atlas_assets"
