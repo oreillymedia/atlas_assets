@@ -1,0 +1,19 @@
+.flash {
+	margin-top: 30px;
+}
+
+.flash .flash-item {
+	background-color: #e0eaed;
+	padding: 12px 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: #838a97;
+}
+
+.flash .flash-item .flash-close {
+	float: right;
+}
+
+/* we need to style .error .notice, etc here

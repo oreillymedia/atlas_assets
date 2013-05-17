@@ -12,6 +12,25 @@
 	display: block;
 }
 
-.center {
+/* Align
+____________________________________________________________ */
+
+.left-column, .right-column {
+	width: 50%;
+	float: left;
+}
+
+/* Align
+____________________________________________________________ */
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
 	text-align: center;
 }
