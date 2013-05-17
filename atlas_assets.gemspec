@@ -5,7 +5,7 @@ require 'atlas_assets'
 
 Gem::Specification.new do |gem|
   gem.name          = "atlas_assets"
-  gem.version       = AtlasAssets::VERSION
+  gem.version       = Atlas::Assets::VERSION
   gem.authors       = ["Rune Skjoldborg Madsen"]
   gem.email         = ["rune@runemadsen.com"]
   gem.description   = %q{Public repository with assets and design guide for the Atlas platform}

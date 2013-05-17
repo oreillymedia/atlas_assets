@@ -1,9 +1,11 @@
-module AtlasAssets
-	VERSION = "0.0.1"
+module Atlas
+	module Assets
+		VERSION = "0.0.1"
+	end
 end
 
-module Devise
-	module Capturable
+module Atlas
+	module Assets
   	module Rails
   	  class Engine < ::Rails::Engine
   	  end
