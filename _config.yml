@@ -1,5 +1,4 @@
-name: Your New Jekyll Site
-pygments: true
+name: O'Reilly Atlas Style Guide
 source: ./docs
 permalink: none
 markdown: kramdown
