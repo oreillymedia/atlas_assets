@@ -6,7 +6,7 @@ This Ruby gem holds all shared assets used throughout the O'Reilly Atlas platfor
 Style Guide
 -----------
 
-You can visit the style guide documentation included in this gem on[atlas-assets.herokuapp.com](http://atlas-assets.herokuapp.com).
+For reference, visit the online [style guide documentation](http://atlas-assets.herokuapp.com) included in this gem.
 
 Usage
 -----
