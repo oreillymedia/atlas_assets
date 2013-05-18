@@ -2,3 +2,10 @@ name: Your New Jekyll Site
 pygments: true
 source: ./docs
 permalink: none
+assets:
+  sources:
+    - ../lib/assets/fonts
+    - ../lib/assets/stylesheets
+    - ../lib/assets/javascripts
+  compress:
+    css:  sass
