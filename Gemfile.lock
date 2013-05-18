@@ -8,6 +8,7 @@ GEM
   specs:
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
+    coderay (1.0.9)
     colorator (0.1)
     commander (4.1.3)
       highline (~> 1.6.11)
@@ -61,8 +62,10 @@ PLATFORMS
 
 DEPENDENCIES
   atlas_assets!
+  coderay
   jekyll
   jekyll-assets
+  kramdown
   puma
   pygmentize (~> 0.0.3)
   rack-contrib

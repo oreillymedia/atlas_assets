@@ -2,6 +2,9 @@ name: Your New Jekyll Site
 pygments: true
 source: ./docs
 permalink: none
+markdown: kramdown
+kramdown:
+  use_coderay: true
 assets:
   sources:
     - ../lib/assets/fonts

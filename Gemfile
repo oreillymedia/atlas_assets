@@ -10,4 +10,6 @@ gem 'jekyll-assets'
 gem 'rack-contrib'
 gem "rack-rewrite"
 gem "pygmentize", "~> 0.0.3"
+gem "kramdown"
+gem "coderay"
 gem "puma"
