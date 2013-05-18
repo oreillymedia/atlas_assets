@@ -4,8 +4,31 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% stylesheet atlas_assets %}
+    <style type="text/css">
+      body {
+        padding: 60px 0px;
+      }
+      h1 {
+        margin-top: 0px;
+      }
+    </style>
   </head>
   <body>
-    {{ content }}
+  	<div class="container">
+    	<div class="row">
+        <div class="span3">
+          <ul class="list">
+            <li class="list-item"><a href="/">Home<i class="icon-arrow-right-2"></i></a></li>
+            {% for post in site.posts %}
+              <li class="list-item"><a href="{{ post.url }}">{{ post.title }}<i class="icon-arrow-right-2"></i></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="span1">&nbsp;</div>
+        <div class="span8">
+          {{ content }}
+        </div>
+      </div>
+  	</div>
   </body>
 </html>

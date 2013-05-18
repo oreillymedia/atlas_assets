@@ -1,0 +1,32 @@
+---
+layout: default
+title:  "Buttons"
+date:   2013-05-17 23:24:04
+---
+
+Buttons
+=======
+
+{% highlight html %}
+<a href="#" class="btn">Button</a>
+{% endhighlight %}
+
+Sizes
+------
+
+<p><a href="#" class="btn small">Small</a></p>
+
+<p><a href="#" class="btn">Normal</a></p>
+
+<p><a href="#" class="btn medium">Medium</a></p>
+
+<p><a href="#" class="btn large">Large</a></p>
+
+Colors
+------
+
+<p><a href="#" class="btn blue">Blue</a></p>
+
+<p><a href="#" class="btn red">Red</a></p>
+
+<p><a href="#" class="btn green">Green</a></p>
