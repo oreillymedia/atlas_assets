@@ -7,9 +7,24 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+.navbar:after {
+  clear: both;
+}
+
 .navbar a {
 	color: #FFF;
 	text-decoration: none;
+}
+
+.navbar-inner:before,
+.navbar-inner:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.navbar-inner:after {
+  clear: both;
 }
 
 /* Brand
@@ -18,7 +33,7 @@
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px 0px;
+  padding: 10px 20px 10px 20px;
 }
 
 /* .nav

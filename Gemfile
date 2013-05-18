@@ -6,7 +6,7 @@ gemspec
 gem "rake"
 gem "jekyll"
 gem "sass"
-gem 'jekyll-assets'
+gem 'jekyll-assets', :git => "git://github.com/ixti/jekyll-assets.git"
 gem 'rack-contrib'
 gem "rack-rewrite"
 gem "pygmentize", "~> 0.0.3"

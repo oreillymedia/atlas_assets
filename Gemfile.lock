@@ -1,7 +1,15 @@
+GIT
+  remote: git://github.com/ixti/jekyll-assets.git
+  revision: a04c7628f4746f2b159cb0c5925876368d0029c1
+  specs:
+    jekyll-assets (0.5.1)
+      jekyll (~> 1.0)
+      sprockets (~> 2.9)
+
 PATH
   remote: .
   specs:
-    atlas_assets (0.0.3)
+    atlas_assets (0.0.4)
 
 GEM
   remote: https://rubygems.org/
@@ -26,9 +34,6 @@ GEM
       maruku (~> 0.5)
       pygments.rb (~> 0.5.0)
       safe_yaml (~> 0.7.0)
-    jekyll-assets (0.5.1)
-      jekyll (~> 1.0)
-      sprockets (~> 2.9)
     kramdown (1.0.2)
     liquid (2.5.0)
     maruku (0.6.1)
@@ -64,7 +69,7 @@ DEPENDENCIES
   atlas_assets!
   coderay
   jekyll
-  jekyll-assets
+  jekyll-assets!
   kramdown
   puma
   pygmentize (~> 0.0.3)
