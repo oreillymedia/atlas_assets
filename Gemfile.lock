@@ -34,10 +34,17 @@ GEM
       syntax (>= 1.0.0)
     multi_json (1.7.3)
     posix-spawn (0.3.6)
+    puma (2.0.1)
+      rack (>= 1.1, < 2.0)
+    pygmentize (0.0.3)
     pygments.rb (0.5.0)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    rack-rewrite (1.3.3)
+    rake (10.0.4)
     safe_yaml (0.7.1)
     sass (3.2.9)
     sprockets (2.9.3)
@@ -56,4 +63,9 @@ DEPENDENCIES
   atlas_assets!
   jekyll
   jekyll-assets
+  puma
+  pygmentize (~> 0.0.3)
+  rack-contrib
+  rack-rewrite
+  rake
   sass
