@@ -10,10 +10,14 @@
 	border-radius: 5px;
 	margin-top: 20px;
 	color: #838a97;
+	position: relative;
 }
 
 .flash .flash-item .flash-close {
-	float: right;
+	position: absolute;
+	top: 13px;
+	right: 15px;
+	color: #838a97;
 }
 
 /* Colors

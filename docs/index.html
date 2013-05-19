@@ -7,3 +7,25 @@ title: Your New Jekyll Site
 <h1>Atlas Style Guide</h1>
 
 Welcome to the O'Reilly Atlas Style Guide. Please choose an item in the menu to the left.
+
+
+<h2>Running on Localhost</h2>
+
+<p>If you need to add or change styles in this gem, first get a local environment set up:</p>
+
+<ol>
+	<li>Clone down the gem to your local machine</li>
+	<li>Run `bundle` from the gem root</li>
+	<li>Fire up jekyll by running <code>jekyll serve --watch</code></li>
+</ol>
+
+<p>You now have the site running in your browser on <code>localhost:4000</code></p>
+
+<h2>Adding new Styles</h2>
+
+<ol>
+	<li>Create you own feature branch</li>
+	<li>Implement your style by tweaking the CSS and checking the documentation on `localhost:4000`. Do not work from the specific Atlas </li>Rails app by updating the gem constantly. All new styles should be developed using the `docs`, and should be independent from a particular application.
+	<li>When ready, bump the version number in `lib/atlas_assets/version.rb`, and send a pull request to the master branch.</li>
+	<li>Bump the `atlas_assets` gem version in your apps `Gemfile`, run `bundle`, and use the new styles.</li>
+</ol>
