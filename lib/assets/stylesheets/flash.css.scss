@@ -16,4 +16,13 @@
 	float: right;
 }
 
-/* we need to style .error .notice, etc here */
+/* Colors
+__________________________________________________________ */
+
+.flash-item.warning {
+	background-color: rgb(243, 243, 195);
+}
+
+.flash-item.error {
+	background-color: rgb(241, 212, 212);
+}
