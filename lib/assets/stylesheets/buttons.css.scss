@@ -1,6 +1,7 @@
 .btn {
 	display: inline-block;
 	color: #FFF;
+	cursor: pointer;
 	background-color: #333;
 	padding: 4px 12px;
 	text-decoration: none;
@@ -10,7 +11,8 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-input[type=submit].btn {
+input[type=submit].btn,
+button.btn {
 	border: none;
 }
 
