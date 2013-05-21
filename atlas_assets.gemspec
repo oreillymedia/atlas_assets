@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["rune@runemadsen.com"]
   gem.description   = %q{Public repository with assets and design guide for the Atlas platform}
   gem.summary       = %q{Public repository with assets and design guide for the Atlas platform}
-  gem.homepage      = ""
+  gem.homepage      = "http://atlas-assets.herokuapp.com"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
