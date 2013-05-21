@@ -104,3 +104,18 @@
 .navbar .nav input[type="text"]:-moz-placeholder {
   color: #FFF;
 }
+
+/* Focus */
+
+.navbar .nav input[type="text"]:focus {
+  background-color: rgb(199, 55, 70);
+}
+
+.navbar .nav input[type="text"]:focus::-webkit-input-placeholder
+{
+  color: rgb(207, 98, 98);
+}
+
+.navbar .nav input[type="text"]:focus:-moz-placeholder {
+  color: rgb(207, 98, 98);
+}
