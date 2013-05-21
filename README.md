@@ -11,17 +11,13 @@ For reference, visit the online [style guide documentation](http://atlas-assets.
 Usage
 -----
 
-To use in a new Rails application, add the gem to your Gemfile, and include the gem manifest file:
+To use in a new Rails application, add the gem to your Gemfile, and add the following to your CSS (`app/assets/stylesheets/application.css`) and JS (`app/assets/javascripts/application.js`) manifest files.
 
 ```javascript
 *= require atlas_assets
 ```
 
-You can also require individual files by name.
-
-```javascript
-*= require icons
-```
+Along with all the CSS and JS widgets, it will include our base bundle of JS libraries (`JQuery`, `underscore.js`, `backbone.js`, etc)
 
 Adding new styles
 -----------------
@@ -36,5 +32,5 @@ You now have the site running in your browser on `localhost:4000`. Now follow th
 
 1. Create you own feature branch
 2. Implement your style by tweaking the CSS and checking the documentation on `localhost:4000`. Do not work from the specific Atlas Rails app by updating the gem constantly. All new styles should be developed using the `docs`, and should be independent from a particular application.
-3. When ready, bump the version number in `lib/atlas_assets/version.rb`, and send a pull request to the master branch.
+3. When ready, bump the version number in `lib/atlas_assets/version.rb`, and send a pull request to the master branch. We'll then release the new gem version by running `gem build` and `gem push`.
 4. Bump the `atlas_assets` gem version in your apps `Gemfile`, run `bundle`, and use the new styles.
