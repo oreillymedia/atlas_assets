@@ -83,6 +83,10 @@
 /* Menu input
 ------------------------------------------------------------------ */
 
+.navbar form {
+  margin: 0;
+}
+
 .navbar .nav input[type="text"] {
   background-color: #ac2f3c;
   border: none;
