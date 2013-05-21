@@ -9,7 +9,8 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.0.6)
+    atlas_assets (0.0.7)
+      handlebars_assets (~> 0.12.1)
 
 GEM
   remote: https://rubygems.org/
@@ -21,7 +22,13 @@ GEM
     commander (4.1.3)
       highline (~> 1.6.11)
     directory_watcher (1.4.1)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     fast-stemmer (1.0.2)
+    handlebars_assets (0.12.1)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
     highline (1.6.19)
     hike (1.2.2)
     jekyll (1.0.2)
