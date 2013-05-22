@@ -19,7 +19,11 @@ To use in a new Rails application, add the gem to your Gemfile, and add the foll
 
 Along with all the CSS and JS widgets, it will include our base bundle of JS libraries (`JQuery`, `underscore.js`, `backbone.js`, etc). It will also set up a number of JS namespaces `window.classes`, `window.app`, `window.events` and `window.constants`, so make sure to include the JS manifest before any of your JS code.
 
-	Show how to use color bars and mixins in the app
+If you need to, you can import individual stylesheets from this gem in your application:
+
+```css
+@import "atlas_assets/icons";
+```
 
 Adding new styles
 -----------------
