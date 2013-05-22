@@ -38,7 +38,7 @@
   @include size($size, $size);
 }
 
-@mixin placeholder($color: $placeholderText) {
+@mixin placeholder($color: $placeholderColor) {
   &:-moz-placeholder {
     color: $color;
   }
@@ -74,6 +74,11 @@
 @mixin resizable($direction) {
   resize: $direction; // Options: horizontal, vertical, both
   overflow: auto; // Safari fix
+}
+
+@mixin ie7-inline-block() {
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
 }
 
 /* Border Radius

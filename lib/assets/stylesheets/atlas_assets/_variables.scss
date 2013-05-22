@@ -3,15 +3,18 @@
 
 $red:             		#ac2f3c !default;
 $lightest_red:				#f1d4d4 !default;
+
 $blue:								#2c7db1 !default;
+$lighter_blue: 				#a9cadf !default;
 $lightest_blue:				#e0eaed !default;
+
 $green:								#91b35b !default;
 $lightest_yellow:			#f3f3c3 !default;
 
 $darkest_gray:				#242424 !default;
 $dark_gray:						#333 !default;
-$gray:								#d1d1d1 !default;
 $medium_gray:					#808080 !default;
+$gray:								#d1d1d1 !default;
 $light_gray:					#e0e0e0 !default;
 $lighter_gray:				#ececec !default;
 $lightest_gray:				#f6f6f6 !default;
@@ -31,7 +34,12 @@ $baseLineHeight:        20px !default;
 /* Forms
 ------------------------------------------------------- */
 
-$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+$inputHeight:           $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+$inputBorderRadius:		  4px;
+$inputBackground: 			$white;
+$inputBorder:						$light_gray;
+$placeholderColor:      $medium_gray;
+$horizontalComponentOffset:       180px;
 
 /* Grid
 ------------------------------------------------------- */
