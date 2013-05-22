@@ -1,15 +1,15 @@
 .flash {
-	margin-top: 30px;
+	margin-bottom: 20px;
 }
 
 .flash .flash-item {
-	background-color: #e0eaed;
+	background-color: $gray;
 	padding: 12px 20px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin-top: 20px;
-	color: #838a97;
+	color: $medium_gray;
 	position: relative;
 }
 
@@ -17,16 +17,20 @@
 	position: absolute;
 	top: 13px;
 	right: 15px;
-	color: #838a97;
+	color: $medium_gray;
 }
 
 /* Colors
 __________________________________________________________ */
 
+.flash-item.notice {
+	background-color: $lightest_blue;
+}
+
 .flash-item.warning {
-	background-color: rgb(243, 243, 195);
+	background-color: $lightest_yellow;
 }
 
 .flash-item.error {
-	background-color: rgb(241, 212, 212);
+	background-color: $lightest_red;
 }
