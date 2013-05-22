@@ -1,18 +1,9 @@
-/* Fonts
+/* Helpers
 ------------------------------------------------- */
-
-@mixin menu-font() {
-  font-family: $menuFontFamily;
-  font-weight: 700;
-  font-size: 15px;
-}
 
 @mixin smooth() {
   -webkit-font-smoothing: antialiased;
 }
-
-/* Helpers
-------------------------------------------------- */
 
 @mixin clearfix {
   *zoom: 1;

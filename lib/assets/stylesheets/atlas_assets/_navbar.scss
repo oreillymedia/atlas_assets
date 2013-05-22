@@ -1,10 +1,10 @@
 .navbar {
   background-color: $red;
   color: $white;
-  font-family: Lato, Helvetica, sans-serif;
+  font-family: $menuFontFamily;
   font-weight: 700;
   font-size: 15px;
-  -webkit-font-smoothing: antialiased;
+  @include smooth();
 }
 
 .navbar:after {
@@ -100,13 +100,8 @@
   margin: 0;
 }
 
-.navbar .nav input[type="text"]::-webkit-input-placeholder
-{
-  color: #FFF;
-}
-
-.navbar .nav input[type="text"]:-moz-placeholder {
-  color: #FFF;
+.navbar .nav input[type="text"] {
+  @include placeholder($white)
 }
 
 /* Focus */
@@ -115,11 +110,6 @@
   background-color: rgb(199, 55, 70);
 }
 
-.navbar .nav input[type="text"]:focus::-webkit-input-placeholder
-{
-  color: rgb(207, 98, 98);
-}
-
-.navbar .nav input[type="text"]:focus:-moz-placeholder {
-  color: rgb(207, 98, 98);
+.navbar .nav input[type="text"]:focus {
+  @include placeholder($lighter_red)
 }

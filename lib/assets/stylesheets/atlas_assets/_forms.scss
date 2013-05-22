@@ -334,7 +334,7 @@ input[type="checkbox"][readonly] {
   vertical-align: middle;
   font-size: 0; // white space collapse hack
   white-space: nowrap; // Prevent span and input from separating
-  color: $dark_gray;
+  color: $darker_gray;
 
   // Reset the white space collapse hack
   input,
@@ -382,7 +382,7 @@ input[type="checkbox"][readonly] {
 .input-prepend .btn {
   background-color: $light_gray;
   border: 2px solid $light_gray;
-  color: $dark_gray;
+  color: $darker_gray;
   margin: 0;
   border-left: 0;
 }
