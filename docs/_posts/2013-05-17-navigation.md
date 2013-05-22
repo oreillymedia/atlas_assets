@@ -77,22 +77,37 @@ The gem also includes style for a footer. It can be used with `.row` and `.spanN
 
 <footer>
 	<div class="row">
-		<div class="span1">&nbsp;</div>
-		<div class="span3">
+		<div class="span3 offset1">
+			This is a footer
+			<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+		</div>
+		<div class="span3 offset1">
+			<ul>
+					<li>About O'Reilly</li>
+					<li><a href="#">Academic Solutions</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Contact</a></li>
+      </ul>
+		</div>
+	</div>
+</footer>
+<br />
+
+~~~html
+<footer>
+	<div class="row">
+		<div class="span3 offset1">
+			This is a footer
+			<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+		</div>
+		<div class="span3 offset1">
 			<ul>
 				<li>About O'Reilly</li>
 				<li><a href="#">Academic Solutions</a></li>
 				<li><a href="#">Jobs</a></li>
 				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-		<div class="span4">
-			<ul>
-				<li>Community</li>
-				<li><a href="#">Authors</a></li>
-				<li><a href="#">Forum</a></li>
-				<li><a href="#">Membership</a></li>
-			</ul>
+      </ul>
 		</div>
 	</div>
 </footer>
+~~~

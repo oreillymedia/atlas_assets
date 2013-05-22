@@ -1,6 +1,14 @@
 footer {
-	background-color: $light_gray;
-	padding: 20px 0px;
+	color: $medium_gray;
+	background-color: $lightest_gray;
+	margin-top: 80px;
+	border-top: 1px solid $light_gray;
+	padding: 40px 0px;
+}
+
+footer p.small {
+	color: $mid_gray;
+	font-size: $smallFontSize;
 }
 
 footer ul {
@@ -11,13 +19,14 @@ footer ul {
 
 footer ul li {
 	margin: 0;
+	margin-bottom: 10px;
 	padding: 0;
 
 	&:first-child {
 		font-family: $menuFontFamily;
 		font-weight: 400;
 		font-size: 14px;
-		color: $mid_gray;
+		color: $darker_gray;
 		margin-bottom: 10px;
 
 		a {
