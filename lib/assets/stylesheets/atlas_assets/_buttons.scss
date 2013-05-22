@@ -1,0 +1,57 @@
+.btn {
+	display: inline-block;
+	color: $white;
+	background-color: $dark_gray;
+	cursor: pointer;
+	padding: 4px 12px;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-font-smoothing: antialiased;
+}
+
+input[type=submit].btn,
+button.btn {
+	border: none;
+}
+
+.btn:hover, .btn:focus {
+	color: #FFF;
+}
+
+/* Sizes
+_________________________________________________________________ */
+
+.btn.small {
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+.btn.medium {
+	font-size: 17px;
+	padding: 7px 16px;
+	@include border-radius(6px);
+}
+
+.btn.large {
+	font-size: 22px;
+	padding: 12px 25px;
+	line-height: 26px;
+	@include border-radius(8px);
+}
+
+/* Colors
+_________________________________________________________________ */
+
+.btn.blue {
+	background-color: $blue;
+}
+
+.btn.red {
+	background-color: $red;
+}
+
+.btn.green {
+	background-color: $green;
+}

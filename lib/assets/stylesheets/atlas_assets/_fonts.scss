@@ -18,16 +18,16 @@
 ---------------------------------------------------------------------------- */
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #333333;
+  font-family: $sansFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  color: $dark_gray;
 }
 
 h1, h2, h3, h4, h5 {
-	margin-bottom: 7px;
-	color: #242424;
-  -webkit-font-smoothing: antialiased;
+  margin-bottom: 7px;
+  color: $darkest_gray;
+  @include smooth();
 }
 
 h1 {
@@ -50,12 +50,8 @@ h4, h5, h6 {
 }
 
 a {
-  color: #2c7db1;
+  color: $blue;
   text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #0280d1;
 }
 
 /* Heading split

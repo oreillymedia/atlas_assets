@@ -1,0 +1,30 @@
+/* Grid
+----------------------------------------------------- */
+
+@include grid-core($gridColumnWidth, $gridGutterWidth);
+@include grid-fluid($fluidGridColumnWidth, $fluidGridGutterWidth);
+
+// Reset utility classes due to specificity
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none;
+}
+
+[class*="span"].pull-right,
+.row-fluid [class*="span"].pull-right {
+  float: right;
+}
+
+/* Container
+----------------------------------------------------- */
+
+.container {
+  @include container-fixed();
+}
+
+// Fluid layouts (left aligned, with sidebar, min- & max-width content)
+.container-fluid {
+  padding-right: $gridGutterWidth;
+  padding-left: $gridGutterWidth;
+  @include clearfix();
+}

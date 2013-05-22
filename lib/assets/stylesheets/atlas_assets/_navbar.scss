@@ -1,10 +1,10 @@
 .navbar {
-	background-color: #ac2f3c;
-	color: #FFF;
-	font-family: Lato, Helvetica, sans-serif;
-	font-weight: 700;
-	font-size: 15px;
-	-webkit-font-smoothing: antialiased;
+  background-color: $red;
+  color: $white;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar:after {
@@ -12,8 +12,8 @@
 }
 
 .navbar a {
-	color: #FFF;
-	text-decoration: none;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .navbar-inner:before,

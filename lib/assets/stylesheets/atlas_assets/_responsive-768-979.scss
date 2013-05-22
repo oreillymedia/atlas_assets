@@ -1,0 +1,5 @@
+@media (min-width: 768px) and (max-width: 979px) {
+  @include grid-core($gridColumnWidth768, $gridGutterWidth768);
+  @include grid-fluid($fluidGridColumnWidth768, $fluidGridGutterWidth768);
+  @include grid-input($gridColumnWidth768, $gridGutterWidth768);
+}

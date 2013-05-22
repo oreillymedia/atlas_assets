@@ -1,0 +1,17 @@
+.box {
+	background-color: $lighter_gray;
+	@include border-bottom-radius(5px);
+	margin-bottom: 10px;
+}
+
+.box .box-inner {
+	padding: 10px 15px;
+}
+
+.box h3 {
+	color: $medium_gray;
+	padding: 8px 15px;
+	margin: 0;
+	background-color: $light_gray;
+	border-bottom: 1px solid $gray;
+}

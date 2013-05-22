@@ -1,0 +1,54 @@
+/* Colors
+------------------------------------------------------- */
+
+$red:             		#ac2f3c !default;
+$blue:								#2c7db1 !default;
+$green:								#91b35b !default;
+
+$darkest_gray:				#242424 !default;
+$dark_gray:						#333 !default;
+$gray:								#d1d1d1 !default;
+$medium_gray:					#808080 !default;
+$light_gray:					#e0e0e0 !default;
+$lighter_gray:				#ececec !default;
+$lightest_gray:				#f6f6f6 !default;
+$white:               #fff !default;
+
+/* Fonts
+------------------------------------------------------- */
+
+$menuFontFamily:        Lato, Helvetica, sans-serif !default;
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+$baseFontSize:          14px !default;
+$baseLineHeight:        20px !default;
+
+/* Forms
+------------------------------------------------------- */
+
+$inputHeight:                   $baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+/* Grid
+------------------------------------------------------- */
+
+$gridColumns:             12 !default;
+$gridColumnWidth:         60px !default;
+$gridGutterWidth:         20px !default;
+$gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+
+// 768px-979px
+$gridColumnWidth768:      42px !default;
+$gridGutterWidth768:      20px !default;
+$gridRowWidth768:         ($gridColumns * $gridColumnWidth768) + ($gridGutterWidth768 * ($gridColumns - 1)) !default;
+
+/* Fluid grid
+------------------------------------------------------- */
+
+$fluidGridColumnWidth:    percentage($gridColumnWidth/$gridRowWidth) !default;
+$fluidGridGutterWidth:    percentage($gridGutterWidth/$gridRowWidth) !default;
+
+// 768px-979px
+$fluidGridColumnWidth768:      percentage($gridColumnWidth768/$gridRowWidth768) !default;
+$fluidGridGutterWidth768:      percentage($gridGutterWidth768/$gridRowWidth768) !default;
