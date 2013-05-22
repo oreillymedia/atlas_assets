@@ -5,7 +5,7 @@
 }
 
 .box .box-inner {
-	padding: 10px 15px;
+	padding: 10px $boxPaddingX;
 }
 
 .box h3 {
@@ -14,4 +14,8 @@
 	margin: 0;
 	background-color: $light_gray;
 	border-bottom: 1px solid $gray;
+}
+
+.box {
+	@include grid-core($gridColumnWidth768, $gridGutterWidth768);
 }
