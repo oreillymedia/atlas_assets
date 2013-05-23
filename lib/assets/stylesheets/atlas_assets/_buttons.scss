@@ -55,3 +55,8 @@ _________________________________________________________________ */
 .btn.green {
 	background-color: $green;
 }
+
+.btn.disabled {
+	background-color: $light_gray;
+	color: $mid_gray;
+}

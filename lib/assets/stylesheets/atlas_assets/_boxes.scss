@@ -6,6 +6,7 @@
 
 .box .box-inner {
 	padding: 15px;
+	@include clearfix();
 }
 
 .box h3 {
@@ -14,6 +15,12 @@
 	margin: 0;
 	background-color: $light_gray;
 	border-bottom: 1px solid $gray;
+	@include clearfix();
+}
+
+.box h3 small {
+	float: right;
+	font-size: 14px;
 }
 
 .box .box-inner *:first-child {
@@ -22,4 +29,19 @@
 
 .box .box-inner *:last-child {
 	margin-bottom: 0;
+}
+
+/* Box Styles
+--------------------------------------------------------- */
+
+.box.box-white {
+	background-color: $white;
+	border: 2px solid $lighter_gray;
+	color: $darker_gray;
+}
+
+.box.box-white h3 {
+	background-color: $lightest_gray;
+	color: $darker_gray;
+	border-bottom-color: $lighter_gray;
 }
