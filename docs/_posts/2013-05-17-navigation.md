@@ -12,7 +12,7 @@ Basic Navbar
 
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="/">Brand</a>
+		<a class="brand" href="/"><span class="logo logo-white"></span></a>
 		<ul class="nav">
 		  <li><a href="#">Item 1</a></li>
 		  <li><a href="#">Item 2</a></li>
@@ -23,7 +23,7 @@ Basic Navbar
 ~~~html
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="/">Brand</a>
+		<a class="brand" href="/"><span class="logo logo-white"></span></a>
 		<ul class="nav">
 		  <li><a href="#">Item 1</a></li>
 		  <li><a href="#">Item 2</a></li>
@@ -38,7 +38,7 @@ You can align a `.nav` to the right by appending a `.pull-right` class.
 
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="/">Brand</a>
+		<a class="brand" href="/"><span class="logo logo-white"></span></a>
 		<ul class="nav pull-right">
 		  <li><a href="#">Item 1</a></li>
 		  <li><a href="#">Item 2</a></li>
@@ -57,7 +57,7 @@ You can align a `.nav` to the right by appending a `.pull-right` class.
 
 <div class="navbar">
 	<div class="navbar-inner">
-		<a class="brand" href="/">Brand</a>
+		<a class="brand" href="/"><span class="logo logo-white"></span></a>
 		<ul class="nav pull-right">
 		  <li><form><input type="text" placeholder="Search ..." /></form></li>
 		</ul>
@@ -78,7 +78,7 @@ The gem also includes style for a footer. It can be used with `.row` and `.spanN
 <footer>
 	<div class="row">
 		<div class="span3 offset1">
-			This is a footer
+			<span class="logo"></span>
 			<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
 		</div>
 		<div class="span3 offset1">
@@ -97,7 +97,7 @@ The gem also includes style for a footer. It can be used with `.row` and `.spanN
 <footer>
 	<div class="row">
 		<div class="span3 offset1">
-			This is a footer
+			<span class="logo"></span>
 			<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
 		</div>
 		<div class="span3 offset1">
