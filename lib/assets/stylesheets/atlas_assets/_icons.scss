@@ -5,7 +5,7 @@
 // 383.9 x 45.4
 
 .logo { 
-	background-image: url(asset_path('logo.svg'));
+	background-image: url(image_path('logo.svg'));
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	display: inline-block;
@@ -15,7 +15,7 @@
 }
 
 .logo.logo-white {
-	background-image: url(asset_path('logo-white.svg'));
+	background-image: url(image_path('logo-white.svg'));
 }
 
 .logo.logo-small {
