@@ -189,6 +189,23 @@
   -webkit-backface-visibility: hidden; // See https://github.com/twitter/bootstrap/issues/5319
 }
 
+/* Opacity
+------------------------------------------------- */
+
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+
+/* Background Clipping
+------------------------------------------------- */
+
+@mixin background-clip($clip) {
+  -webkit-background-clip: $clip;
+     -moz-background-clip: $clip;
+          background-clip: $clip;
+}
+
 /* Grid
 ------------------------------------------------- */
 

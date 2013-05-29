@@ -38,6 +38,6 @@ You now have the site running in your browser on `localhost:4000`. Now follow th
 
 1. Create you own feature branch
 2. Implement your style by tweaking the CSS and checking the documentation on `localhost:4000`. Do not work from the specific Atlas Rails app by updating the gem constantly. All new styles should be developed using the `docs`, and should be independent from a particular application.
-3. When ready, bump the version number in `lib/atlas_assets/version.rb`, and send a pull request to the master branch.
-4. When the pull request has been accepted, we'll publish the gem by running `gem build atlas_assets.gemspec` and `gem push [NAME].gem`.
+3. When ready, bump the version number in `lib/atlas_assets/version.rb`, run `bundle update` and send a pull request to the master branch.
+4. When the pull request has been accepted, we'll publish the gem by running  `gem build atlas_assets.gemspec` and `gem push [NAME].gem`.
 5. Bump the `atlas_assets` gem version in your apps `Gemfile`, run `bundle`, and use the new styles.

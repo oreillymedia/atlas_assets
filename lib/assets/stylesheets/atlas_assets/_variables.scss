@@ -12,6 +12,7 @@ $lightest_blue:				#e0eaed !default;
 $green:								#91b35b !default;
 $lightest_yellow:			#f3f3c3 !default;
 
+$black:								#000000 !default;
 $darkest_gray:				#242424 !default;
 $darker_gray:					#333333 !default;
 $medium_gray:					#808080 !default;
@@ -44,6 +45,16 @@ $inputBackground: 			$white;
 $inputBorder:						$light_gray;
 $placeholderColor:      $medium_gray;
 $horizontalComponentOffset:       180px;
+
+/* Z-Indexes
+------------------------------------------------------- */
+
+$zindexDropdown:          1000 !default;
+$zindexPopover:           1010 !default;
+$zindexTooltip:           1030 !default;
+$zindexFixedNavbar:       1030 !default;
+$zindexModalBackdrop:     1040 !default;
+$zindexModal:             1050 !default;
 
 /* Grid
 ------------------------------------------------------- */
