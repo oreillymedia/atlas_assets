@@ -69,7 +69,7 @@ input[type="color"],
   margin-bottom: $baseLineHeight / 2;;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  color: $gray;
+  color: $darker_gray;
   @include border-radius($inputBorderRadius);
   vertical-align: middle;
 }

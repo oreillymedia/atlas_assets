@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.1.7)
+    atlas_assets (0.1.8)
       handlebars_assets (~> 0.12.1)
 
 GEM
@@ -30,8 +30,8 @@ GEM
       sprockets (>= 2.0.3)
       tilt
     highline (1.6.19)
-    hike (1.2.2)
-    jekyll (1.0.2)
+    hike (1.2.3)
+    jekyll (1.0.3)
       classifier (~> 1.3)
       colorator (~> 0.1)
       commander (~> 4.1.3)
@@ -45,7 +45,7 @@ GEM
     liquid (2.5.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    multi_json (1.7.4)
+    multi_json (1.7.6)
     posix-spawn (0.3.6)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -74,13 +74,13 @@ PLATFORMS
 
 DEPENDENCIES
   atlas_assets!
-  coderay
-  jekyll
+  coderay (~> 1.0.9)
+  jekyll (~> 1.0.2)
   jekyll-assets!
-  kramdown
-  puma
+  kramdown (~> 1.0.2)
+  puma (~> 2.0.1)
   pygmentize (~> 0.0.3)
-  rack-contrib
-  rack-rewrite
-  rake
-  sass
+  rack-contrib (~> 1.1.0)
+  rack-rewrite (~> 1.3.3)
+  rake (~> 10.0.4)
+  sass (~> 3.2.9)
