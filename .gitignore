@@ -1,3 +1,5 @@
 .DS_Store
 _site
 *.gem
+tmp/
+.sass-cache/
