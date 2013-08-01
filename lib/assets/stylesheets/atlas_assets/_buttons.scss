@@ -5,9 +5,7 @@
 	cursor: pointer;
 	padding: 4px 12px;
 	text-decoration: none;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	@include border-radius($borderRadius);
 	outline: none;
 	@include smooth();
 }
@@ -32,14 +30,14 @@ _________________________________________________________________ */
 .btn.medium {
 	font-size: 17px;
 	padding: 7px 16px;
-	@include border-radius(6px);
+	@include border-radius($borderRadiusMedium);
 }
 
 .btn.large {
 	font-size: 22px;
 	padding: 12px 25px;
 	line-height: 26px;
-	@include border-radius(8px);
+	@include border-radius($borderRadiusLarge);
 }
 
 /* Colors

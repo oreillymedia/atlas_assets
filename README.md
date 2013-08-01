@@ -33,7 +33,6 @@ If you need to add or change styles in this gem, first get a local environment s
 1. Clone down the gem to your local machine
 2. Run `bundle` from the gem root
 3. Fire up jekyll by running `jekyll serve --watch`
-4. If you want Jekyll to register changes to css, run this in another shell `sass --watch lib/assets/stylesheets/:tmp`
 
 You now have the site running in your browser on `localhost:4000`. Now follow these steps to add and document the new style(s):
 
