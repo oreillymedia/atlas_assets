@@ -1,0 +1,53 @@
+.tabs-container {
+  @include clearfix();
+
+  .tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs li {
+    @include box-sizing(border-box);
+    background: $lightest_gray;
+    list-style: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding: 1em;
+    width: 100%;
+    border-left: 2px solid $gray;
+    border-right: 2px solid $gray;
+    border-top: 2px solid $gray;
+
+    .icon-arrow-right-2 {
+      display: none;
+    }
+
+    &:last-child {
+      border-bottom: 2px solid $gray;
+    }
+
+    &:hover {
+      color: $blue;
+      cursor: pointer;
+    }
+
+    &.active .icon-arrow-right-2 {
+      display: block;
+      float: right;
+    }
+  }
+
+  .tab-pane {
+    @include box-sizing(border-box);
+    padding: 1em;
+    @extend .box.box-white;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
