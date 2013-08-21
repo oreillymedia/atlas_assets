@@ -16,9 +16,9 @@
     padding: 0;
     padding: 1em;
     width: 100%;
-    border-left: 2px solid $gray;
-    border-right: 2px solid $gray;
-    border-top: 2px solid $gray;
+    border-left: 2px solid $lighter_gray;
+    border-right: 2px solid $lighter_gray;
+    border-top: 2px solid $lighter_gray;
 
     .icon-arrow-right-2 {
       display: none;
@@ -35,6 +35,7 @@
 
     &.active .icon-arrow-right-2 {
       display: block;
+
       float: right;
     }
   }
