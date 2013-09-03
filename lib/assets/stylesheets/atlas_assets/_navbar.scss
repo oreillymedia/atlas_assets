@@ -113,3 +113,10 @@
 .navbar .nav input[type="text"]:focus {
   @include placeholder($lighter_red)
 }
+
+/* Glyphicons
+------------------------------------------------------------------ */
+
+.navbar .nav .glyphicons {
+  color: #FFF;
+}

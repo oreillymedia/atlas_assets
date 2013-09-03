@@ -12,35 +12,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .glyphicons {
-  display: inline-block;
-  position: relative;
-  padding-left: 48px;
-  color: #1d1d1b;
-  text-decoration: none;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: middle;
-}
-.glyphicons:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: inline-block;
-  margin: 0 5px 0 0;
-  font: 24px/1em 'Glyphicons Regular';
+  font-family: 'Glyphicons Regular';
+  speak: none;
   font-style: normal;
   font-weight: normal;
-  color: #1d1d1b;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: middle;
+  font-variant: normal;
   text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
 }
-.glyphicons.white:before {
-  color: #fff;
-}
+
 .glyphicons.glass:before {
   content: "\E001";
 }

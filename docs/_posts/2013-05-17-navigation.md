@@ -42,6 +42,7 @@ You can align a `.nav` to the right by appending a `.pull-right` class.
 		<ul class="nav pull-right">
 		  <li><a href="#">Item 1</a></li>
 		  <li><a href="#">Item 2</a></li>
+		  <li><a href="#"><i class="glyphicons log_out"></i></a></li>
 		</ul>
 	</div>
 </div>
@@ -50,6 +51,7 @@ You can align a `.nav` to the right by appending a `.pull-right` class.
 <ul class="nav pull-right">
   <li><a href="#">Item 1</a></li>
   <li><a href="#">Item 2</a></li>
+  <li><a href="#"><i class="glyphicons log_out"></i></a></li>
 </ul>
 ~~~
 
