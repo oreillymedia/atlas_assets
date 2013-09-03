@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
 
-  body {
+  .container, .container-fluid {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -41,7 +41,7 @@
   .row-fluid [class*="offset"]:first-child {
     margin-left: 0;
   }
-  
+
   // Make span* classes full width
   .input-large,
   .input-xlarge,
