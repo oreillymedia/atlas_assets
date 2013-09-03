@@ -309,6 +309,10 @@ input[type="checkbox"][readonly] {
 .help-block,
 .help-inline {
   color: $medium_gray;
+
+  a {
+    color: $blue_gray;
+  }
 }
 
 .help-block {
