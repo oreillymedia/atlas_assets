@@ -14,7 +14,7 @@
 		padding: 13px 10px;
 		color: $darker_gray;
 
-		i.icon-arrow-right-2 {
+		i.list-icon {
 			float: right;
 			color: $gray;
 		}
@@ -22,7 +22,7 @@
 
 	a:hover {
 		color: $blue;
-		i.icon-arrow-right-2 {
+		i.list-icon {
 			color: $darker_gray;
 		}
 	}
