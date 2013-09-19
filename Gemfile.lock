@@ -1,15 +1,15 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 9e78c6df1fe6341571d3956c24e8a5151cb48c5b
+  revision: 88155428176def0eb02353fd8c7c50490ba93c7a
   specs:
-    jekyll-assets (0.7.1)
+    jekyll-assets (0.7.2)
       jekyll (~> 1.0)
       sprockets (~> 2.10)
 
 PATH
   remote: .
   specs:
-    atlas_assets (0.2.4)
+    atlas_assets (0.3.0)
       handlebars_assets (~> 0.12.1)
 
 GEM
@@ -44,7 +44,7 @@ GEM
     liquid (2.5.2)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    multi_json (1.7.9)
+    multi_json (1.8.0)
     posix-spawn (0.3.6)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)

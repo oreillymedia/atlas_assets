@@ -1,0 +1,33 @@
+.logo { 
+  background-image: url(image_path('logo.svg'));
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+
+  width: 130px;
+  height: 16px;
+}
+
+.logo.logo-white {
+  background-image: url(image_path('logo-white.svg'));
+}
+
+.logo.logo-small {
+  width: 108px;
+  height: 13px;
+}
+
+.logo.logo-medium {
+  width: 269px;
+  height: 32px;
+}
+
+.logo.logo-large {
+  width: 384px;
+  height: 46px;
+}
+
+// fix logo in navbars
+.navbar .logo {
+  vertical-align: text-bottom;
+}
