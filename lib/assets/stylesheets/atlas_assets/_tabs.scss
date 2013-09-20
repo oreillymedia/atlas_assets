@@ -20,7 +20,7 @@
     border-right: 2px solid $lighter_gray;
     border-top: 2px solid $lighter_gray;
 
-    .icon-arrow-right-2 {
+    .list-icon {
       display: none;
     }
 
@@ -33,7 +33,7 @@
       cursor: pointer;
     }
 
-    &.active .icon-arrow-right-2 {
+    &.active .list-icon {
       display: block;
 
       float: right;
