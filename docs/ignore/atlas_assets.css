@@ -667,7 +667,6 @@ footer ul li {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased; }
 
@@ -4645,6 +4644,40 @@ footer ul li {
 .icon-renren:before {
   content: "\f18b"; }
 
+.icn-round {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0; }
+
+/* Variations
+_________________________________________________________________ */
+.icn-info {
+  background-color: #417ba0;
+  color: white;
+  border: none; }
+
+.icn-error {
+  background-color: #ac2f3c;
+  color: white;
+  border: none; }
+
+.icn-success {
+  border: none;
+  background-color: #91b35b;
+  color: white; }
+
+.icn-warning {
+  border: none;
+  background-color: #d5b238;
+  color: white; }
+
 .logo {
   background-image: url(image_path("logo.svg"));
   background-size: 100% auto;
@@ -4692,7 +4725,6 @@ footer ul li {
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased; }
 
@@ -7643,7 +7675,7 @@ _________________________________________________________________ */
   -moz-border-radius: 8px;
   border-radius: 8px; }
 
-/* Colors
+/* Variations
 _________________________________________________________________ */
 .btn.btn-info {
   border-color: #2c5874;

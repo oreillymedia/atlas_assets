@@ -1,0 +1,38 @@
+.icn-round {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  @include border-radius(10px);
+  background-color: $defaultBackgroundColor;
+  border: 1px solid $defaultBorderColor;
+  // vertical-align: middle;
+}
+
+/* Variations
+_________________________________________________________________ */
+
+.icn-info {
+  background-color: $blue;
+  color: white;
+  border: none;
+}
+
+.icn-error {
+  background-color: $red;
+  color: white;
+  border: none;
+}
+
+.icn-success {
+  border: none;
+  background-color: $green;
+  color: white;
+}
+
+.icn-warning {
+  border: none;
+  background-color: $yellow;
+  color: white;
+}
