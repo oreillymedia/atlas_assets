@@ -2,57 +2,65 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	border: 1px solid $lighter_gray;
+	@include border-radius($defaultBorderRadius);
 }
 
 .list .list-item {
-	border-bottom: 1px solid $light_gray;
+	border-bottom: 1px dashed $gray;
 	margin: 0;
 	padding: 0;
-
-	a {
-		display: block;
-		padding: 13px 10px;
-		color: $darker_gray;
-
-		i.list-icon {
-			float: right;
-			color: $gray;
-		}
-	}
-
-	a:hover {
-		color: $blue;
-		i.list-icon {
-			color: $darker_gray;
-		}
-	}
-
-	&:nth-child(even) {
-		background-color: $lightest_gray;
-	}
 
 	&:last-child {
 		border-bottom: none;
 	}
 }
 
-/* Sizes
-_________________________________________________________________ */
+/* List Sizes
+---------------------------------------------------------- */
 
-.list.medium {
+.list.list-small {
+	font-size: 13px;
+}
+
+.list.list-small .list-item.list-padding {
+	padding: 8px 10px;
+}
+
+.list.list-medium {
 	font-size: 16px;
 }
 
-.list.medium .list-item a {
+.list.list-medium .list-item.list-padding {
 	padding: 12px 15px;
 }
 
-.list.large {
+.list.list-large {
 	font-size: 18px;
 }
 
-.list.large .list-item a {
+.list.list-large .list-item.list-padding {
 	padding: 15px 10px;
+}
+
+/* List Padding
+---------------------------------------------------------- */
+
+.list .list-padding {
+	padding: 13px 15px 13px 10px;
+}
+
+/* List Icon
+---------------------------------------------------------- */
+
+.list i.list-icon {
+	float: right;
+	color: $gray;
+}
+
+.list a:hover i.list-icon,
+.list i.list-icon:hover {
+	text-decoration: none;
 }
 
 /* List Helpers

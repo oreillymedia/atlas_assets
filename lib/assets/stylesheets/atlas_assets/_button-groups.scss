@@ -34,26 +34,26 @@ _________________________________________________________________ */
 
 .btn-group > .btn:first-child {
   margin-left: 0;
-  @include border-top-left-radius($borderRadius);
-  @include border-bottom-left-radius($borderRadius);
+  @include border-top-left-radius($defaultBorderRadius);
+  @include border-bottom-left-radius($defaultBorderRadius);
 }
 
 .btn-group > .btn:last-child,
 .btn-group > .dropdown-toggle {
-  @include border-top-right-radius($borderRadius);
-  @include border-bottom-right-radius($borderRadius);
+  @include border-top-right-radius($defaultBorderRadius);
+  @include border-bottom-right-radius($defaultBorderRadius);
 }
 
 .btn-group > .btn.large:first-child {
   margin-left: 0;
-  @include border-top-left-radius($borderRadiusLarge);
-  @include border-bottom-left-radius($borderRadiusLarge);
+  @include border-top-left-radius($defaultBorderRadiusLarge);
+  @include border-bottom-left-radius($defaultBorderRadiusLarge);
 }
 
 .btn-group > .btn.large:last-child,
 .btn-group > .large.dropdown-toggle {
-  @include border-top-right-radius($borderRadiusLarge);
-  @include border-bottom-right-radius($borderRadiusLarge);
+  @include border-top-right-radius($defaultBorderRadiusLarge);
+  @include border-bottom-right-radius($defaultBorderRadiusLarge);
 }
 
 .btn-group > .btn:hover,

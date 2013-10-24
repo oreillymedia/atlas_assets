@@ -50,6 +50,10 @@ $defaultBorderColor: $light_gray;
 $defaultBackgroundColor: $lightest_gray;
 $defaultFontColor: $darker_gray;
 
+$defaultBorderRadius: 3px;
+$defaultBorderRadiusMedium: 6px;
+$defaultBorderRadiusLarge: 8px;
+
 $baseFontSize:          14px !default;
 $baseLineHeight:        20px !default;
 $smallFontSize:         12px !default;
@@ -63,13 +67,6 @@ $inputBackground: 			$white;
 $inputBorder:						$light_gray;
 $placeholderColor:      $medium_gray;
 $horizontalComponentOffset:       180px;
-
-/* Border Radius
-------------------------------------------------------- */
-
-$borderRadius: 3px;
-$borderRadiusMedium: 6px;
-$borderRadiusLarge: 8px;
 
 /* Z-Indexes
 ------------------------------------------------------- */

@@ -6,8 +6,6 @@
 ------------------------------------------------------- */
 /* Forms
 ------------------------------------------------------- */
-/* Border Radius
-------------------------------------------------------- */
 /* Z-Indexes
 ------------------------------------------------------- */
 /* Grid
@@ -7812,41 +7810,53 @@ _________________________________________________________________ */
 .list {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid #ececec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
 
 .list .list-item {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px dashed #d1d1d1;
   margin: 0;
   padding: 0; }
-  .list .list-item a {
-    display: block;
-    padding: 13px 10px;
-    color: #333333; }
-    .list .list-item a i.list-icon {
-      float: right;
-      color: #d1d1d1; }
-  .list .list-item a:hover {
-    color: #417ba0; }
-    .list .list-item a:hover i.list-icon {
-      color: #333333; }
-  .list .list-item:nth-child(even) {
-    background-color: #f7f7f7; }
   .list .list-item:last-child {
     border-bottom: none; }
 
-/* Sizes
-_________________________________________________________________ */
-.list.medium {
+/* List Sizes
+---------------------------------------------------------- */
+.list.list-small {
+  font-size: 13px; }
+
+.list.list-small .list-item.list-padding {
+  padding: 8px 10px; }
+
+.list.list-medium {
   font-size: 16px; }
 
-.list.medium .list-item a {
+.list.list-medium .list-item.list-padding {
   padding: 12px 15px; }
 
-.list.large {
+.list.list-large {
   font-size: 18px; }
 
-.list.large .list-item a {
+.list.list-large .list-item.list-padding {
   padding: 15px 10px; }
+
+/* List Padding
+---------------------------------------------------------- */
+.list .list-padding {
+  padding: 13px 15px 13px 10px; }
+
+/* List Icon
+---------------------------------------------------------- */
+.list i.list-icon {
+  float: right;
+  color: #d1d1d1; }
+
+.list a:hover i.list-icon,
+.list i.list-icon:hover {
+  text-decoration: none; }
 
 /* List Helpers
 _________________________________________________________________ */

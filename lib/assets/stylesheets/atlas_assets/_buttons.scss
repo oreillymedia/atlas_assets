@@ -6,7 +6,7 @@
 	cursor: pointer;
 	padding: 4px 12px;
 	text-decoration: none;
-	@include border-radius($borderRadius);
+	@include border-radius($defaultBorderRadius);
 	outline: none;
 	@include smooth();
 }
@@ -27,14 +27,14 @@ _________________________________________________________________ */
 .btn.btn-medium {
 	font-size: 17px;
 	padding: 7px 16px;
-	@include border-radius($borderRadiusMedium);
+	@include border-radius($defaultBorderRadiusMedium);
 }
 
 .btn.btn-large {
 	font-size: 22px;
 	padding: 12px 25px;
 	line-height: 26px;
-	@include border-radius($borderRadiusLarge);
+	@include border-radius($defaultBorderRadiusLarge);
 }
 
 /* Variations
