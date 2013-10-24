@@ -19,7 +19,7 @@ _________________________________________________________________ */
 .btn-group > .btn {
   position: relative;
   @include border-radius(0);
-  border: 1px solid $defaultBorderColor;
+  // border: 1px solid $defaultBorderColor;
 }
 
 .btn-group > .btn + .btn {

@@ -7611,10 +7611,6 @@ footer ul li {
   outline: none;
   -webkit-font-smoothing: antialiased; }
 
-input[type=submit].btn,
-button.btn {
-  border: none; }
-
 .btn:hover, .btn:focus {
   background: #e0eaed;
   border: 1px solid #a9cadf; }
@@ -7718,8 +7714,7 @@ _________________________________________________________________ */
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0;
-  border: 1px solid #e0e0e0; }
+  border-radius: 0; }
 
 .btn-group > .btn + .btn {
   margin-left: -1px; }

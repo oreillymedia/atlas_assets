@@ -11,11 +11,6 @@
 	@include smooth();
 }
 
-input[type=submit].btn,
-button.btn {
-	border: none;
-}
-
 .btn:hover, .btn:focus {
 	background: $lightest_blue;
   border: 1px solid $lighter_blue
