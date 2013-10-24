@@ -1,7 +1,8 @@
 .btn {
+  color: $defaultFontColor;
 	display: inline-block;
-	color: $white;
-	background-color: $darker_gray;
+  border: 1px solid $defaultBorderColor;
+  background: $defaultBackgroundColor;
 	cursor: pointer;
 	padding: 4px 12px;
 	text-decoration: none;
@@ -16,24 +17,25 @@ button.btn {
 }
 
 .btn:hover, .btn:focus {
-	color: #FFF;
+	background: $lightest_blue;
+  border: 1px solid $lighter_blue
 }
 
 /* Sizes
 _________________________________________________________________ */
 
-.btn.small {
+.btn.btn-small {
 	font-size: 12px;
 	padding: 5px 10px;
 }
 
-.btn.medium {
+.btn.btn-medium {
 	font-size: 17px;
 	padding: 7px 16px;
 	@include border-radius($borderRadiusMedium);
 }
 
-.btn.large {
+.btn.btn-large {
 	font-size: 22px;
 	padding: 12px 25px;
 	line-height: 26px;
@@ -43,26 +45,47 @@ _________________________________________________________________ */
 /* Colors
 _________________________________________________________________ */
 
-.btn.blue {
+.btn.btn-info {
+  border-color: $darker_blue;
 	background-color: $blue;
+  color: white;
+  &:hover {
+    background-color: $light_blue;
+  }
 }
 
-.btn.red {
+.btn.btn-error {
+  border-color: $darker_red;
 	background-color: $red;
+  color: white;
+  &:hover {
+    background-color: $light_red;
+  }
 }
 
-.btn.green {
+.btn.btn-success {
+  border-color: $darker_green;
 	background-color: $green;
+  color: white;
+  &:hover {
+    background-color: $light_green;
+  }
 }
 
-.btn.disabled {
+.btn.btn-warning {
+  border-color: $darker_yellow;
+  background-color: $yellow;
+  color: white;
+  &:hover {
+    background-color: $light_yellow;
+  }
+}
+
+.btn.btn-disabled {
+  cursor: not-allowed;
 	background-color: $light_gray;
 	color: $mid_gray;
-}
-
-.btn.gray {
-  background-color: $light_gray;
-  color: $darker_gray;
+  border: none;
 }
 
 /* Close button

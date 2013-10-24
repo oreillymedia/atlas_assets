@@ -2,16 +2,26 @@
 ------------------------------------------------------- */
 
 $red:             		#ac2f3c !default;
+$darker_red:          #7E2B34 !default;
 $medium_red:					#c73746 !default;
+$light_red:           #C54653 !default;
 $lighter_red:					#cf6262 !default;
 $lightest_red:				#f1d4d4 !default;
 
-$blue:								#2c7db1 !default;
+$blue:								#417ba0 !default;
+$darker_blue:         #2C5874 !default;
 $blue_gray:           #739EB9 !default;
+$light_blue:          #568EB3 !default;
 $lighter_blue: 				#a9cadf !default;
 $lightest_blue:				#e0eaed !default;
 	
 $green:								#91b35b !default;
+$light_green:         #9FC06A !default;
+$darker_green:        #75914A !default;
+
+$yellow:              #D5B238 !default;
+$darker_yellow:       #B89B39 !default;
+$light_yellow:        #EBCF6E !default;
 $lightest_yellow:			#f3f3c3 !default;
 
 $black:								#000000 !default;
@@ -22,21 +32,27 @@ $mid_gray:						#aaaaaa !default;
 $gray:								#d1d1d1 !default;
 $light_gray:					#e0e0e0 !default;
 $lighter_gray:				#ececec !default;
-$lightest_gray:				#f6f6f6 !default;
+$lightest_gray:				#f7f7f7 !default;
 $white:               #ffffff !default;
 
 /* Fonts
 ------------------------------------------------------- */
 
-$menuFontFamily:        Lato, Helvetica, sans-serif !default;
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$menuFontFamily:        Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$sansFontFamily:        Lato, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
+/* Defaults
+------------------------------------------------------- */
+
+$defaultBorderColor: $light_gray;
+$defaultBackgroundColor: $lightest_gray;
+$defaultFontColor: $darker_gray;
+
 $baseFontSize:          14px !default;
 $baseLineHeight:        20px !default;
-
-$smallFontSize:					12px !default;
+$smallFontSize:         12px !default;
 
 /* Forms
 ------------------------------------------------------- */

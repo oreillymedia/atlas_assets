@@ -17,8 +17,8 @@
   width: 560px;
   margin-left: -280px;
   background-color: $white;
-  border: 2px solid $lighter_gray;
-  @include border-bottom-radius(5px);
+  border: 1px solid $light_gray;
+  @include border-radius(5px);
   @include background-clip(padding-box);
   outline: none;
 }
