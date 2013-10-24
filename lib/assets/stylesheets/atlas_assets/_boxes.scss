@@ -1,26 +1,24 @@
 .box {
-	background-color: $lighter_gray;
-	@include border-bottom-radius(5px);
+	background-color: $defaultBackgroundColor;
+	border: 1px solid $defaultBorderColor;
+	@include border-radius($defaultBorderRadius);
 	margin-bottom: 10px;
 }
 
 .box .box-inner {
+	background-color: white;
 	padding: 15px;
 	@include clearfix();
 }
 
-.box h3 {
-	color: $medium_gray;
-	padding: 8px 15px;
-	margin: 0;
-	background-color: $light_gray;
-	border-bottom: 1px solid $gray;
-	@include clearfix();
+.box .box-top {
+	padding: 8px 10px;
+	border-bottom: 1px solid $defaultBorderColor;
 }
 
-.box h3 small {
-	float: right;
-	font-size: 14px;
+.box .box-bottom {
+	padding: 8px 10px;
+	border-top: 1px solid $defaultBorderColor;
 }
 
 .box .box-inner *:first-child {
@@ -31,17 +29,14 @@
 	margin-bottom: 0;
 }
 
+.box .list {
+	border: none;
+	background-color: white;
+}
+
 /* Box Styles
 --------------------------------------------------------- */
 
 .box.box-white {
 	background-color: $white;
-	border: 2px solid $lighter_gray;
-	color: $darker_gray;
-}
-
-.box.box-white h3 {
-	background-color: $lightest_gray;
-	color: $darker_gray;
-	border-bottom-color: $lighter_gray;
 }

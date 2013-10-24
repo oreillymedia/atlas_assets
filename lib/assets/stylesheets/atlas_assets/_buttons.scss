@@ -11,6 +11,10 @@
 	@include smooth();
 }
 
+a.btn:hover {
+  text-decoration: none;
+}
+
 .btn:hover, .btn:focus {
 	background: $lightest_blue;
   border: 1px solid $lighter_blue

@@ -5,27 +5,27 @@
     list-style: none;
     margin-top: 0;
     padding: 0;
+    background: $defaultBackgroundColor;
+    border: 1px solid $defaultBorderColor;
+    @include border-radius($defaultBorderRadius);
   }
 
   .tabs li {
     @include box-sizing(border-box);
-    background: $lightest_gray;
     list-style: none;
     font-weight: bold;
     margin: 0;
     padding: 0;
     padding: 1em;
     width: 100%;
-    border-left: 2px solid $lighter_gray;
-    border-right: 2px solid $lighter_gray;
-    border-top: 2px solid $lighter_gray;
+    border-bottom: 1px dashed $defaultBorderColor;
+
+    &:last-child {
+      border: none;
+    }
 
     .list-icon {
       display: none;
-    }
-
-    &:last-child {
-      border-bottom: 2px solid $lighter_gray;
     }
 
     &:hover {
@@ -35,7 +35,6 @@
 
     &.active .list-icon {
       display: block;
-
       float: right;
     }
   }

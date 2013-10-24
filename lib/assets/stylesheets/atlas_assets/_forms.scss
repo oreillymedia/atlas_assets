@@ -101,7 +101,7 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   background-color: $inputBackground;
-  border: 2px solid $inputBorder;
+  border: 1px solid $inputBorder;
   &:focus {
     border-color: $lighter_blue;
     outline: 0;
@@ -372,7 +372,7 @@ input[type="checkbox"][readonly] {
     line-height: $baseLineHeight;
     text-align: center;
     background-color: $light_gray;
-    border: 2px solid $light_gray;
+    border: 1px solid $light_gray;
   }
   .add-on,
   .btn,
@@ -385,7 +385,7 @@ input[type="checkbox"][readonly] {
 .input-append .btn,
 .input-prepend .btn {
   background-color: $light_gray;
-  border: 2px solid $light_gray;
+  border: 1px solid $light_gray;
   color: $darker_gray;
   margin: 0;
   border-left: 0;
