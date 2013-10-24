@@ -238,6 +238,13 @@ h4, h5, h6 {
 a {
   color: #417ba0;
   text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+/* Font Helpers
+--------------------------------------------------------- */
+.underline {
+  text-decoration: underline; }
 
 /* Heading split
 --------------------------------------------------------- */
