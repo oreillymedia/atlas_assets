@@ -17,7 +17,7 @@ classes.DropdownView = Backbone.View.extend
 
   add: (params) ->
     model = params.model
-    model.set 'label', model.get(params.label || 'label')
+    model.set 'label', model.get(@opts.label || 'label')
     @collection.add(model)
     @set_default(model)
     @render().el

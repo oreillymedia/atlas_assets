@@ -25,7 +25,6 @@
   border: 1px solid $defaultBorderColor;
   border-top: 0;
   background: $defaultBackgroundColor;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
 }
 
 .chosen-container.chosen-with-drop .chosen-drop {
@@ -47,7 +46,6 @@
   border: 1px solid $defaultBorderColor;
   background-color: $defaultBackgroundColor;
   background-clip: padding-box;
-  box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
   color: $defaultFontColor;
   text-decoration: none;
   white-space: nowrap;
@@ -210,7 +208,6 @@
   outline: 0;
   border: 0 !important;
   background: transparent !important;
-  box-shadow: none;
   color: $medium_gray;
   font-size: 100%;
   font-family: $sansFontFamily;
@@ -228,7 +225,6 @@
   border-radius: 3px;
   background-color: $lighter_gray;
   background-clip: padding-box;
-  box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
   color: $darker_gray;
   line-height: 13px;
   cursor: default;
@@ -272,7 +268,6 @@
 /* @group Active  */
 .chosen-container-active .chosen-single {
   border: 1px solid $defaultLinkColor;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .chosen-container-active.chosen-with-drop .chosen-single {
   border: 1px solid $defaultBorderColor;
@@ -280,7 +275,6 @@
   border-bottom-right-radius: 0;
   -moz-border-radius-bottomleft: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 0 1px 0 $white inset;
 }
 .chosen-container-active.chosen-with-drop .chosen-single div {
   border-left: none;
@@ -291,7 +285,6 @@
 }
 .chosen-container-active .chosen-choices {
   border: 1px solid $defaultLinkColor;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .chosen-container-active .chosen-choices li.search-field input[type="text"] {
   color: $darkest_gray !important;
