@@ -7615,6 +7615,9 @@ _________________________________________________________________ */
   border: none;
   background-color: white; }
 
+.box .list.list-gray {
+  border: none; }
+
 /* Box Styles
 --------------------------------------------------------- */
 .box.box-white {
