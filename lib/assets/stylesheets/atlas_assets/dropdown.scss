@@ -1,0 +1,16 @@
+@import "atlas_assets/variables";
+
+.dropdown {
+  display: inline-block;
+  padding: 10px 0;
+  position: relative;
+  font-size: 14px;
+
+  .helper {
+    color: $medium_gray;
+  }
+}
+
+.dropdown[class*="span"] {
+  margin-left: 0;
+}
