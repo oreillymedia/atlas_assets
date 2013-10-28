@@ -1,0 +1,8 @@
+{{#if helper}}
+  <span class="helper">{{helper}}</span>
+{{/if}}
+<select class="dropdown-list" {{#if placeholder}}data-placeholder='{{placeholder}}'{{/if}}>
+  {{#each models}}
+  <option {{#if selected}}selected{{/if}} {{#if disabled}}disabled{{/if}}>{{label}}</option>
+  {{/each}}
+</select>
