@@ -37,7 +37,7 @@
         margin-top: 10px;
         margin-bottom: 20px;
       }
-      
+
       .show-grid [class*="span"] {
         background-color: #cecece;
         text-align: center;
@@ -55,7 +55,8 @@
         <div class="span3">
           <ul class="list">
             <li class="list-item list-padding"><a href="/">Home<i class="icon-arrow-right-2"></i></a></li>
-            {% for post in site.posts %}
+            {% assign sorted_posts = site.posts | sort: 'title' %}
+            {% for post in sorted_posts %}
               <li class="list-item list-padding"><a href="{{ post.url }}">{{ post.title }}<i class="icon-arrow-right-2"></i></a></li>
             {% endfor %}
           </ul>
