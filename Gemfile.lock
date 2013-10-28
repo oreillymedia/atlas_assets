@@ -9,8 +9,8 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.4.1)
-      handlebars_assets (~> 0.12.1)
+    atlas_assets (0.4.2)
+      handlebars_assets (~> 0.12.2)
 
 GEM
   remote: https://rubygems.org/
