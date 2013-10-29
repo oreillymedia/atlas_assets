@@ -13,6 +13,18 @@
   .dropdown-with-helper-container {
     display: inline-block;
   }
+
+  .chosen-container {
+    .chosen-single,
+    .chosen-choices {
+      @include border-radius($defaultBorderRadius);
+    }
+  }
+
+  .chosen-container-multi .chosen-results,
+  .chosen-container-multi .chosen-drop, {
+    @include border-radius($defaultBorderRadius);
+  }
 }
 
 .dropdown[class*="span"] {
