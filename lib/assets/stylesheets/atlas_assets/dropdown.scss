@@ -9,6 +9,10 @@
   .helper {
     color: $medium_gray;
   }
+
+  .dropdown-with-helper-container {
+    display: inline-block;
+  }
 }
 
 .dropdown[class*="span"] {
