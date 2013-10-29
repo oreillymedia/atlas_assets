@@ -82,9 +82,12 @@ _________________________________________________________________ */
 
 .btn.btn-disabled {
   cursor: not-allowed;
-	background-color: $light_gray;
 	color: $mid_gray;
-  border: none;
+
+  &:hover {
+    border: 1px solid $defaultBorderColor;
+    background-color: $defaultBackgroundColor;
+  }
 }
 
 /* Close button
