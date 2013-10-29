@@ -255,6 +255,9 @@ a {
 .heading-split h1, .heading-split h2, .heading-split h3, .heading-split > div {
   display: inline-block; }
 
+.heading-split .pull-right {
+  margin-top: 22px; }
+
 /* Grid
 ----------------------------------------------------- */
 .row {
