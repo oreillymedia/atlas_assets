@@ -1,2 +1,2 @@
-classes.DropDownCollection = Backbone.Collection.extend
-  model: classes.DropDown
+classes.DropdownCollection = Backbone.Collection.extend
+  model: classes.Dropdown
