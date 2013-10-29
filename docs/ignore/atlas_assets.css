@@ -7706,9 +7706,10 @@ _________________________________________________________________ */
 
 .btn.btn-disabled {
   cursor: not-allowed;
-  background-color: #e0e0e0;
-  color: #aaaaaa;
-  border: none; }
+  color: #aaaaaa; }
+  .btn.btn-disabled:hover {
+    border: 1px solid #e0e0e0;
+    background-color: #f7f7f7; }
 
 /* Close button
 _________________________________________________________________ */
