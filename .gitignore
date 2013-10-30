@@ -2,3 +2,4 @@
 _site
 *.gem
 .sass-cache/
+docs/ignore
