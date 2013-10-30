@@ -7632,6 +7632,13 @@ _________________________________________________________________ */
 .box .box-top input {
   margin: 0; }
 
+.box .box-top h3 {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 5px;
+  vertical-align: middle; }
+
 /* Box Styles
 --------------------------------------------------------- */
 .box.box-white {
@@ -8765,8 +8772,7 @@ ____________________________________________________________ */
   *display: inline;
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
-  min-width: 200px; }
+  user-select: none; }
 
 .chosen-container .chosen-drop {
   position: absolute;
