@@ -2,12 +2,28 @@
 
 .dropdown {
   display: inline-block;
-  padding: 10px 0;
+  padding: 0 0 10px;
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
 
   .helper {
     color: $medium_gray;
+  }
+
+  .dropdown-with-helper-container {
+    display: inline-block;
+  }
+
+  .chosen-container {
+    .chosen-single,
+    .chosen-choices {
+      @include border-radius($defaultBorderRadius);
+    }
+  }
+
+  .chosen-container-multi .chosen-results,
+  .chosen-container-multi .chosen-drop, {
+    @include border-radius($defaultBorderRadius);
   }
 }
 

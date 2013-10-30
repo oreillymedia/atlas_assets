@@ -1,5 +1,6 @@
-classes.DropDown = Backbone.Model.extend
+classes.Dropdown = Backbone.Model.extend
   intialize: () ->
     @
+
   setLabel: (label) ->
     @set('label',@get(label))

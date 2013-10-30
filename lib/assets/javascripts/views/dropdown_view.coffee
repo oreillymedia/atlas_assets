@@ -5,7 +5,7 @@ classes.DropdownView = Backbone.View.extend
 
   initialize: (opts) ->
     if !@collection?
-      @collection = new classes.DropDownCollection
+      @collection = new classes.DropdownCollection
     @opts = _.extend({width: "100%", disable_search_threshold: 2}, opts)
     @template = JST["dropdown"];
     @listenTo(@collection, 'add', @render)
