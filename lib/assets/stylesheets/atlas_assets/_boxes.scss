@@ -38,6 +38,13 @@
 	border: none;
 }
 
+/* Remove padding from nested elements
+--------------------------------------------------------- */
+
+.box .box-top input {
+	margin: 0;
+}
+
 /* Box Styles
 --------------------------------------------------------- */
 
