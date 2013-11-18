@@ -40,8 +40,8 @@ _________________________________________________________________ */
 /* Small icons
 _________________________________________________________________ */
 
-.icn-round.small, 
-.icn-round.small.glyphicons {
+.icn-round.icn-small, 
+.icn-round.icn-small.glyphicons {
   font-size: 15px;
   height: 15px;
   width: 16px;
@@ -51,7 +51,7 @@ _________________________________________________________________ */
   padding: 0px 0px 1px 0px;
 }
 
-.icn-round.small:before {
+.icn-round.icn-small:before {
   font-size: 10px;
   display: inline;
   vertical-align: middle;
