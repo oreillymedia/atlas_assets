@@ -36,3 +36,23 @@ _________________________________________________________________ */
   background-color: $yellow;
   color: white;
 }
+
+/* Small icons
+_________________________________________________________________ */
+
+.icn-round.icn-small, 
+.icn-round.icn-small.glyphicons {
+  font-size: 15px;
+  height: 15px;
+  width: 16px;
+  line-height: 1em;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0px 0px 1px 0px;
+}
+
+.icn-round.icn-small:before {
+  font-size: 10px;
+  display: inline;
+  vertical-align: middle;
+}
