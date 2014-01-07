@@ -39,6 +39,20 @@
     }
   }
 
+  .tabs.horizontal li {
+    width: auto;
+    float: left;
+    display: block;
+    border-bottom: none;
+    border-right: 1px solid $defaultBorderColor;
+
+    &:last-child { border-right: none; }
+
+    &.active {
+      border-bottom: 2px solid $defaultLinkColor;
+    }
+  }
+
   .tab-pane {
     @include box-sizing(border-box);
     display: none;
