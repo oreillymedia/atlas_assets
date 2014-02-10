@@ -71,6 +71,36 @@
 	text-decoration: none;
 }
 
+/* Linked Lists
+_________________________________________________________________ */
+.list a.list-padding {
+	display: block;
+}
+
+/* Linked Lists + Icons outside of the link
+_________________________________________________________________ */
+.list .has-icon-outside-link {
+	padding-right: 8px;
+	a.list-padding {
+		width: 90%; // works till about 550px
+		display: inline-block;
+	}
+	.list-icon {
+		margin-top: 13px;
+	}
+	.list-icon:hover {
+		color: $black;
+		cursor: pointer;
+	}
+}
+
+// for lists with width smaller than 550px
+.list .has-icon-outside-link.skinny {
+	a.list-padding {
+		width: 70%;
+	}
+}
+
 /* List Helpers
 _________________________________________________________________ */
 
@@ -79,3 +109,6 @@ ul.clean, ul.clean li {
 	padding: 0;
 	list-style: none;
 }
+
+
+
