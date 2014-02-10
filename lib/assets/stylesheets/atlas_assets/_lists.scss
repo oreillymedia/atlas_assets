@@ -81,7 +81,7 @@ _________________________________________________________________ */
 _________________________________________________________________ */
 .list .has-icon-outside-link {
 	padding-right: 8px;
-	a.list-padding {
+	a.list-padding, div.list-padding {
 		width: 90%; // works till about 550px
 		display: inline-block;
 	}
@@ -96,7 +96,7 @@ _________________________________________________________________ */
 
 // for lists with width smaller than 550px
 .list .has-icon-outside-link.skinny {
-	a.list-padding {
+	a.list-padding, div.list-padding {
 		width: 70%;
 	}
 }
