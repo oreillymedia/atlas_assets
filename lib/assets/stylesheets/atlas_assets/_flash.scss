@@ -18,6 +18,10 @@
 	top: 13px;
 	right: 15px;
 	color: $medium_gray;
+	&:hover {
+		color: $dark_gray;
+		text-decoration: none;
+	}
 }
 
 /* Colors
