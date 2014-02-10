@@ -25,6 +25,23 @@ If you need to, you can import individual stylesheets from this gem in your appl
 @import "atlas_assets/icons";
 ```
 
+Local Development
+-----------------
+
+To get started on your own machine first install the required gems with bundler"
+
+```
+bundle install
+```
+
+Then to run the site and watch for changes run:
+
+```
+foreman start -f Procfile.dev
+```
+
+This will launch the jekyll command as well as a second script to watch for changes to stylesheets and write those changes to `docs/ignore` to trigger rebuilds from jekyll. That folder is ignored by git and can be safely deleted.
+
 Adding new styles
 -----------------
 
