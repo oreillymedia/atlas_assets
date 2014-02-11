@@ -4,6 +4,9 @@
 	padding: 0;
 	border: 1px solid $lighter_gray;
 	@include border-radius($defaultBorderRadius);
+	a {
+			text-decoration: none;
+	}
 }
 
 .list .list-item {
@@ -82,7 +85,7 @@ _________________________________________________________________ */
 .list .has-icon-outside-link {
 	padding-right: 8px;
 	a.list-padding, div.list-padding {
-		width: 90%; // works till about 550px
+		width: 87%; // works till about 375px
 		display: inline-block;
 	}
 	.list-icon {
@@ -94,8 +97,8 @@ _________________________________________________________________ */
 	}
 }
 
-// for lists with width smaller than 550px
-.list .has-icon-outside-link.skinny {
+// for lists with width smaller than 375px
+.list.list-skinny .has-icon-outside-link {
 	a.list-padding, div.list-padding {
 		width: 70%;
 	}
