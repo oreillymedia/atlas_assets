@@ -1,15 +1,15 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 9ac861a2c494e517c2324cee1815d3fb1384c824
+  revision: e4035fff6e9469437d7f4d4f3b94735472635eff
   specs:
-    jekyll-assets (0.7.4)
+    jekyll-assets (0.7.5)
       jekyll (~> 1.0)
       sprockets (~> 2.10)
 
 PATH
   remote: .
   specs:
-    atlas_assets (0.5.7)
+    atlas_assets (0.5.8)
       handlebars_assets (~> 0.12.2)
 
 GEM
@@ -23,7 +23,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     colorator (0.1)
-    commander (4.1.5)
+    commander (4.1.6)
       highline (~> 1.6.11)
     directory_watcher (1.4.1)
     execjs (2.0.2)
