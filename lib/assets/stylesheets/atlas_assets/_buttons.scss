@@ -44,7 +44,7 @@ _________________________________________________________________ */
 /* Variations
 _________________________________________________________________ */
 
-.btn.btn-info {
+.btn.btn-info, .btn.info {
   border-color: $darker_blue;
 	background-color: $blue;
   color: white;
@@ -53,7 +53,13 @@ _________________________________________________________________ */
   }
 }
 
-.btn.btn-error {
+.btn.btn-working, .btn.working {
+  border-color: $blue;
+  background-color: $darker_blue;
+  color: white;
+}
+
+.btn.btn-error, .btn.error {
   border-color: $darker_red;
 	background-color: $red;
   color: white;
@@ -62,7 +68,7 @@ _________________________________________________________________ */
   }
 }
 
-.btn.btn-success {
+.btn.btn-success, .btn.success {
   border-color: $darker_green;
 	background-color: $green;
   color: white;
@@ -71,7 +77,7 @@ _________________________________________________________________ */
   }
 }
 
-.btn.btn-warning {
+.btn.btn-warning, .btn.warning {
   border-color: $darker_yellow;
   background-color: $yellow;
   color: white;
@@ -80,7 +86,7 @@ _________________________________________________________________ */
   }
 }
 
-.btn.btn-disabled {
+.btn.btn-disabled, .btn.disabled {
   cursor: not-allowed;
 	color: $mid_gray;
 
