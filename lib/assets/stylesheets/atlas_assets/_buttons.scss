@@ -57,6 +57,9 @@ _________________________________________________________________ */
   border-color: $blue;
   background-color: $darker_blue;
   color: white;
+  &:hover {
+    cursor: wait;
+  }
 }
 
 .btn.btn-error, .btn.error {
