@@ -3,3 +3,4 @@ _site
 *.gem
 .sass-cache/
 docs/ignore
+.ruby-version
