@@ -53,10 +53,45 @@ _________________________________________________________________ */
   }
 }
 
+@-moz-keyframes loadingKeyframes
+{
+  0%   {
+    background:$blue;
+    border-color: $darker_blue;
+  }
+  50%  {
+    background:#a9cce3;
+    border-color: $blue;
+  }
+  100% {
+    background:$blue;
+    border-color: $darker_blue;
+  }
+}
+
+@-webkit-keyframes loadingKeyframes
+{
+  0%   {
+    background:$blue;
+    border-color: $darker_blue;
+  }
+  50%  {
+    background:#a9cce3;
+    border-color: $blue;
+  }
+  100% {
+    background:$blue;
+    border-color: $darker_blue;
+  }
+}
+
 .btn.btn-working, .btn.working {
-  border-color: $blue;
+  border-color: $darker_blue;
   background-color: $darker_blue;
   color: white;
+  animation:loadingKeyframes 2s;
+  -moz-animation:loadingKeyframes 2s infinite;
+  -webkit-animation:loadingKeyframes 2s infinite;
   &:hover {
     cursor: wait;
   }
