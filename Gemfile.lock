@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.6.2)
+    atlas_assets (0.6.3)
       handlebars_assets (~> 0.12.2)
 
 GEM
@@ -47,7 +47,7 @@ GEM
     kramdown (1.0.2)
     liquid (2.5.5)
     maruku (0.7.1)
-    multi_json (1.9.0)
+    multi_json (1.9.2)
     posix-spawn (0.3.8)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -61,7 +61,7 @@ GEM
     rack-rewrite (1.3.3)
     rake (10.0.4)
     safe_yaml (0.7.1)
-    sass (3.2.15)
+    sass (3.2.17)
     sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
