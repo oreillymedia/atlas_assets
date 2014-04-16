@@ -62,7 +62,7 @@ GEM
     rack-rewrite (1.3.3)
     rake (10.0.4)
     safe_yaml (0.7.1)
-    sass (3.2.18)
+    sass (3.2.19)
     sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
