@@ -1,5 +1,5 @@
 module Atlas
 	module Assets
-		VERSION = "0.6.6"
+		VERSION = "0.6.6.1"
 	end
 end
