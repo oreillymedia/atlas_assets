@@ -1,9 +1,10 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 20875e89be0d460bc79e82cc741b2893d5fc0c83
+  revision: 4ce7eeb9eb4af29b14b77ba32addf05889f6961c
   specs:
     jekyll-assets (0.7.7)
       jekyll (~> 1.0)
+      sass
       sprockets (~> 2.10)
 
 PATH
@@ -48,7 +49,7 @@ GEM
     kramdown (1.0.2)
     liquid (2.5.5)
     maruku (0.7.1)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     posix-spawn (0.3.8)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -63,7 +64,7 @@ GEM
     rake (10.0.4)
     safe_yaml (0.7.1)
     sass (3.2.19)
-    sprockets (2.12.0)
+    sprockets (2.12.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
