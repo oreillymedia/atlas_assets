@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.6.6.1)
+    atlas_assets (0.7.0)
       handlebars_assets (~> 0.15)
 
 GEM
