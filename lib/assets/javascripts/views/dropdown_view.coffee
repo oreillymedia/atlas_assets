@@ -7,7 +7,7 @@ classes.DropdownView = Backbone.View.extend
     if !@collection?
       @collection = new classes.DropdownCollection
     @opts = _.extend({width: "100%", disable_search_threshold: 4}, opts)
-    @template = JST["dropdown"];
+    @template = JST["templates/dropdown"];
     @listenTo(@collection, 'add', @render)
     @collection.each (model) =>
       @set_default(model)
@@ -24,7 +24,8 @@ classes.DropdownView = Backbone.View.extend
 
   render: () ->
     @rendered = true;
-    @$el.html(this.template(_.extend(@opts, {models: @collection.toJSON()})))
+    t = @
+    @$el.html(t.template(_.extend(@opts, {models: @collection.toJSON()})))
 
     this.delegateEvents();
     @$('.dropdown-list').chosen({width: @opts.width, disable_search_threshold: @opts.disable_search_threshold}).change((e,selected) =>

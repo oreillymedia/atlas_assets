@@ -1,0 +1,12 @@
+<% if @helper?: %>
+  <span class="helper"><%= @helper %>:</span>
+  <div class="dropdown-with-helper-container">
+<% end %>
+<select class="dropdown-list" <% if @multiple: %>multiple<% end %> <% if @placeholder?: %>data-placeholder='<%= @placeholder %>'<% end %>>
+  <% for model in @models: %>
+  <option <% if model.selected?: %>selected<% end %> <% if model.disabled: %>disabled<% end %>><%= model.get('label') %></option>
+  <% end %>
+</select>
+<% if @helper?: %>
+</div>
+<% end %>
