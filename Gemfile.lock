@@ -27,6 +27,11 @@ GEM
     commander (4.1.6)
       highline (~> 1.6.11)
     directory_watcher (1.4.1)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
     execjs (2.0.2)
     fast-stemmer (1.0.2)
     handlebars_assets (0.15)
@@ -79,6 +84,7 @@ DEPENDENCIES
   atlas_assets!
   coderay (~> 1.0.9)
   coffee-script
+  eco
   jekyll (~> 1.0.2)
   jekyll-assets!
   kramdown (~> 1.0.2)
