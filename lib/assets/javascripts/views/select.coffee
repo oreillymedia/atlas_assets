@@ -51,7 +51,10 @@ class classes.SelectView extends Backbone.View
   bind_select: ->
     t = @
     @rendered = true
-    @select = new Select({el: @$el.find('select')[0] })
+    @select = new Select({
+      el: @$el.find('select')[0]
+      className: 'select-theme-atlas'
+    })
     @select.on('change', (v) ->
       selected_model = t.collection.find((m) -> m.get(t.label) is v.value)
       t.trigger('change', selected_model)
