@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 4ce7eeb9eb4af29b14b77ba32addf05889f6961c
+  revision: 1bcbf61539f139a6c4d85728f84a6414ba352141
   specs:
-    jekyll-assets (0.7.7)
-      jekyll (~> 1.0)
+    jekyll-assets (0.7.8)
+      jekyll (>= 1.0.0, < 3.0.0)
       sass
       sprockets (~> 2.10)
 
