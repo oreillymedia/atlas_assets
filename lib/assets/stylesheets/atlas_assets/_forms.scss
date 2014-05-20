@@ -499,6 +499,7 @@ input[type="checkbox"][readonly] {
 // Margin to space out fieldsets
 .control-group {
   margin-bottom: $baseLineHeight / 2;
+  overflow-y: auto;
 }
 
 // Legend collapses margin, so next element is responsible for spacing
