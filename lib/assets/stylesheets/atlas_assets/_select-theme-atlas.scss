@@ -114,7 +114,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   position: relative;
-  padding: 0.5rem 3em 0.5rem 1em;
+  padding: 0.25rem 2em 0.25rem 0.5em;
   background: $defaultBackgroundColor;
   border: 1px solid #dddddd;
   cursor: pointer;
@@ -138,7 +138,7 @@
 
   &.select-theme-atlas b {
     position: absolute;
-    right: 1em;
+    right: 0.75em;
     top: 0;
     bottom: 0;
     margin: auto;

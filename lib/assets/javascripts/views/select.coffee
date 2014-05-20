@@ -43,7 +43,7 @@ class classes.SelectView extends Backbone.View
 
   add_model: (m) ->
     @set_model_label(m)
-    @render().el
+    @$el.find('select').first().append("<option>#{m.get('label')}</option>")
 
   set_model_label: (model) =>
     model.set('label',model.get(@label))
@@ -55,10 +55,18 @@ class classes.SelectView extends Backbone.View
       el: @$el.find('select')[0]
       className: 'select-theme-atlas'
     })
+
     @select.on('change', (v) ->
-      selected_model = t.collection.find((m) -> m.get(t.label) is v.value)
+      selected_model = t.collection.find((model) -> model.get(t.label) is v.value)
       t.trigger('change', selected_model)
     )
+
+  get_value: -> @select.value
+  get_model: ->
+    value = @select.value
+    @collection.find (model) => model.get('label') is value
+
+  set: (value) -> @select.change(value)
 
   render: ->
     @$el.html(@template({models:@collection.models, helper:@helper}))
