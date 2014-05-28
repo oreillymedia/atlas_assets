@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 1bcbf61539f139a6c4d85728f84a6414ba352141
+  revision: ab60a35479b683258bef7ca5b4692964c5659589
   specs:
-    jekyll-assets (0.7.8)
+    jekyll-assets (0.7.9)
       jekyll (>= 1.0.0, < 3.0.0)
       sass
       sprockets (~> 2.10)
@@ -10,7 +10,7 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.7.3)
+    atlas_assets (0.8.0)
       handlebars_assets (~> 0.15)
 
 GEM
@@ -32,9 +32,9 @@ GEM
       eco-source
       execjs
     eco-source (1.1.0.rc.1)
-    execjs (2.0.2)
+    execjs (2.1.0)
     fast-stemmer (1.0.2)
-    handlebars_assets (0.15)
+    handlebars_assets (0.16)
       execjs (>= 1.2.9)
       multi_json
       sprockets (>= 2.0.3)
@@ -53,7 +53,7 @@ GEM
       safe_yaml (~> 0.7.0)
     kramdown (1.0.2)
     liquid (2.5.5)
-    maruku (0.7.1)
+    maruku (0.7.2)
     multi_json (1.10.1)
     posix-spawn (0.3.8)
     puma (2.0.1)
