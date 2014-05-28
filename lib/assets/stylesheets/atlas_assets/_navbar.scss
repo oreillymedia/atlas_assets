@@ -33,7 +33,11 @@
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px 0px;
+  padding: 11px 20px 0px 0px;
+}
+
+.navbar .logo {
+  vertical-align: text-bottom;
 }
 
 /* .nav
@@ -66,7 +70,7 @@
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: #91323b;
+  background-color: #CF1C46;
 }
 
 .navbar .nav #profile-link {
@@ -87,7 +91,7 @@
 }
 
 .navbar .nav input[type="text"] {
-  background-color: $medium_red;
+  background-color: #CF1C46;
   border: none;
   font-family: Lato, Helvetica, sans-serif;
   font-weight: 700;
@@ -106,11 +110,11 @@
 /* Focus */
 
 .navbar .nav input[type="text"]:focus {
-  background-color: rgb(199, 55, 70);
+  background-color: #E52E59;
 }
 
 .navbar .nav input[type="text"]:focus {
-  @include placeholder($lighter_red)
+  @include placeholder(#E52E59)
 }
 
 /* Glyphicons

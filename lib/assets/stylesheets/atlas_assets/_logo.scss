@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   display: inline-block;
 
-  width: 130px;
-  height: 16px;
+  width: 100px;
+  height: 18px;
 }
 
 .logo.logo-white {
@@ -13,21 +13,16 @@
 }
 
 .logo.logo-small {
-  width: 108px;
-  height: 13px;
+  width: 85px;
+  height: 16px;
 }
 
 .logo.logo-medium {
-  width: 269px;
-  height: 32px;
+  width: 160px;
+  height: 29px;
 }
 
 .logo.logo-large {
-  width: 384px;
-  height: 46px;
-}
-
-// fix logo in navbars
-.navbar .logo {
-  vertical-align: text-bottom;
+  width: 300px;
+  height: 54px;
 }
