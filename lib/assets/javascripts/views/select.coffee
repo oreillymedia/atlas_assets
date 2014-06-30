@@ -40,10 +40,20 @@ class classes.SelectView extends Backbone.View
     @collection = new Backbone.Collection(_.map(values, (v) ->
       return {"label": v}
     ))
+    @collection.comparator = "label"
+    @collection.sort()
 
   add_model: (m) ->
     @set_model_label(m)
-    @$el.find('select').first().append("<option>#{m.get('label')}</option>")
+    select_el = @$el.find('select').first()
+    select_el.append("<option>#{m.get('label')}</option>")
+
+    sort_by_name = (a, b) ->
+      a.innerHTML.toLowerCase().localeCompare(b.innerHTML.toLowerCase())
+
+    options = select_el.children().get().sort(sort_by_name)
+    for opt in options
+      select_el.append(opt)
 
   set_model_label: (model) =>
     model.set('label',model.get(@label))
@@ -68,7 +78,8 @@ class classes.SelectView extends Backbone.View
 
   set: (value) -> @select.change(value)
 
-  render: ->
-    @$el.html(@template({models:@collection.models, helper:@helper}))
+  render: =>
+    @collection.comparator = "label"
+    @$el.html(@template({models:@collection.sort().models, helper:@helper}))
     @trigger('rendered') if !@rendered
     @
