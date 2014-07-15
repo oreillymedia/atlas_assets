@@ -1,4 +1,7 @@
 classes.DropButtonView = Backbone.View.extend
+  events:
+    'click .drpb-main a': 'click_main'
+
   initialize: (opts) ->
     if !opts.models? and !opts.collection?
       throw new Error("DropButtonView must be instantiated with either a collection or array of objects")
@@ -18,9 +21,17 @@ classes.DropButtonView = Backbone.View.extend
     else
       @collection.first()
 
+  click_main: ->
+    if _.isFunction @main_button.get('onclick')
+      @main_button.get('onclick')()
+      false
+
+  functionator: (v) -> if _.isFunction(v) then "#" else v
+
   render: ->
     @$el.html @template({
+      functionator: @functionator,
       main_button: @main_button,
-      collection: @collection.toJSON()
+      others: @collection.reject((m) => m is @main_button )
     })
     @

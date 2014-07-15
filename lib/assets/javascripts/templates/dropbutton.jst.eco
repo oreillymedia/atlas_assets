@@ -1,6 +1,8 @@
-HEY
 <div class="drpb-main">
-  <%= JSON.stringify @main_button %>
+  <a href="<%= @functionator(@main_button.get('onclick')) %>"><%= @main_button.get('label') %></a>
 </div>
 <div class="drpb-drop">
+  <% for option in @others: %>
+  <%= JSON.stringify option.toJSON() %>
+  <% end %>
 </div>
