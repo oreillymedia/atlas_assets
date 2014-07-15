@@ -1,0 +1,6 @@
+HEY
+<div class="drpb-main">
+  <%= JSON.stringify @main_button %>
+</div>
+<div class="drpb-drop">
+</div>
