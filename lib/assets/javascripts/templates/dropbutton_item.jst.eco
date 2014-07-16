@@ -1,0 +1,1 @@
+<a href="<%= @functionator(@model.onclick) %>"><%= @model.label %></a>
