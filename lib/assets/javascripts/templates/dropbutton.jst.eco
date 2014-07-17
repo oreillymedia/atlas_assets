@@ -1,9 +1,7 @@
-<div class="drpb-main">
-  <a href="<%= @functionator(@main_button.onclick) %>"><%= @main_button.label %></a>
-</div>
-<div class="drpb-btn">
-  x
-</div>
+<a class="drpb-main" href="<%= @functionator(@main_button.onclick) %>"><%= @main_button.label %></a>
+<a href="#" class="drpb-btn">
+  &nbsp;
+</a>
 
 <div class="drpb-drop">
 </div>
