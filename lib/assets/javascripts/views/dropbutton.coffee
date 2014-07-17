@@ -42,15 +42,16 @@ classes.DropButtonView = Backbone.View.extend
       others: @others
     })
 
-    drop = new Drop
+    _.each @subviews, (view) =>
+      @$('.drpb-drop').append(view.render().el)
+
+    console.log @$('.drpb-drop')[0]
+
+    @drop = new Drop
       target: @$el.find('.drpb-btn')[0]
-      content: '<div class="drpb-drops">SUP</div>'
+      content: @$('.drpb-drop')[0]
       position: 'bottom left'
       openOn: 'click'
-
-
-    _.each @subviews, (view) =>
-      $('.drpb-drops').append(view.render().el)
 
     @
 
@@ -60,6 +61,7 @@ classes.DropButtonItemView = Backbone.View.extend
     'click a': 'click'
 
   click: ->
+    console.log 'sup'
     if _.isFunction(@model.get('onclick'))
       @model.get('onclick')()
       false
