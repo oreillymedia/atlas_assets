@@ -1,2 +1,3 @@
 web: bundle exec jekyll serve -w
 sass: sass --watch lib/assets/stylesheets:docs/ignore
+coffee: coffee -o docs/ignore -wc lib/assets/javascripts

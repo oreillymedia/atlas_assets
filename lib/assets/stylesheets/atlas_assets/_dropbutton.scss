@@ -1,0 +1,72 @@
+@import "atlas_assets/_variables";
+@import "atlas_assets/_mixins";
+
+.drpb, .drpb-drop {
+  @include box-sizing(border-box);
+  width: 200px;
+}
+
+.drpb {
+  @include border-radius($defaultBorderRadius);
+  border: 1px solid $defaultBorderColor;
+  display: table;
+
+  .drpb-main,
+  .drpb-btn {
+    @include box-sizing(border-box);
+    background-color: $defaultBackgroundColor;
+    display: table-cell;
+    padding: 5px;
+
+    &:hover {
+      background-color: $lightest_blue;
+      text-decoration: none;
+    }
+  }
+
+  .drpb-main {
+  }
+
+  .drpb-btn {
+    border-left: 1px solid $defaultBorderColor;
+    width: 20px;
+    background: image-url('chosen-sprite.png') 4px 5px no-repeat $defaultBackgroundColor;
+
+    &:hover, &.drop-enabled {
+      background-color: $lightest_blue;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+
+  .drpb .drpb-btn {
+    background-image: image-url('chosen-sprite@2x.png') !important;
+  }
+}
+
+.drpb-drop {
+  background: $defaultBackgroundColor;
+  border-top: 2px solid $defaultBorderColor;
+
+  div {
+    border-bottom: 1px solid $defaultBorderColor;
+    border-left: 1px solid $defaultBorderColor;
+    border-right: 1px solid $defaultBorderColor;
+
+    &:last-child {
+      @include border-bottom-right-radius($defaultBorderRadius);
+      @include border-bottom-left-radius($defaultBorderRadius);
+    }
+
+    a {
+      display: block;
+      padding: 4px 5px;
+
+      &:hover {
+        background-color: $lightest_blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
