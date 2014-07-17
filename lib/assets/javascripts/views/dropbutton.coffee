@@ -75,6 +75,7 @@ classes.DropButtonItemView = Backbone.View.extend
   initialize: (opts) ->
     @model = opts.model
     @template = JST['templates/dropbutton_item']
+    @$el.addClass(@model.get('className'))
 
   render: ->
     @$el.html(@template({
