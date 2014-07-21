@@ -16,7 +16,7 @@
     @include box-sizing(border-box);
     background-color: $defaultBackgroundColor;
     display: table-cell;
-    padding: 5px;
+    padding: 4px;
 
     &:hover {
       background-color: $lightest_blue;
