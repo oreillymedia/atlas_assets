@@ -1,10 +1,10 @@
 GIT
   remote: git://github.com/ixti/jekyll-assets.git
-  revision: 4dd25e216332a979056e189b8ac00b2acdeda140
+  revision: c5e72007c84b44f6a250f69b8fe4c46fade8c0ef
   specs:
-    jekyll-assets (0.8.1)
+    jekyll-assets (0.9.0)
       jekyll (>= 1.0.0, < 3.0.0)
-      sass
+      sass (~> 3.2)
       sprockets (~> 2.10)
       sprockets-helpers
       sprockets-sass
@@ -12,7 +12,7 @@ GIT
 PATH
   remote: .
   specs:
-    atlas_assets (0.8.2)
+    atlas_assets (0.8.3)
       handlebars_assets (~> 0.15)
 
 GEM
