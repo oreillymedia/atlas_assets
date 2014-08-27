@@ -30,7 +30,6 @@
   .drpb-btn {
     border-left: 1px solid $defaultBorderColor;
     width: 20px;
-    background: image-url('chosen-sprite.png') 4px 5px no-repeat $defaultBackgroundColor;
 
     &:hover, &.drop-enabled {
       background-color: $lightest_blue;
