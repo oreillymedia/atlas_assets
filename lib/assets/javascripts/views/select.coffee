@@ -16,7 +16,6 @@
 class classes.SelectView extends Backbone.View
 
   defaults: {label: 'label'}
-  className: "select-dropdown"
 
   initialize: (options) ->
     @rendered = false
@@ -80,6 +79,6 @@ class classes.SelectView extends Backbone.View
 
   render: =>
     @collection.comparator = "label"
-    @$el.html(@template({models:@collection.sort().models, helper:@helper}))
+    @$el.html(@template({models:@collection.sort().models, helper:@helper})).addClass("select-dropdown")
     @trigger('rendered') if !@rendered
     @
