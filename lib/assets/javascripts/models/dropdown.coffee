@@ -3,4 +3,6 @@ classes.Dropdown = Backbone.Model.extend
     @
 
   setLabel: (label) ->
-    @set('label',@get(label))
+    @set('label', @get(label))
+  setValue: (value) ->
+    @set('value', @get(value))
