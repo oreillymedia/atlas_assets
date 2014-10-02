@@ -1,14 +1,3 @@
-GIT
-  remote: git://github.com/ixti/jekyll-assets.git
-  revision: 6f07aaf1e2844cc1332acfa1834b01fdf00f8670
-  specs:
-    jekyll-assets (0.10.0)
-      jekyll (~> 2.0)
-      sass (~> 3.2)
-      sprockets (~> 2.10)
-      sprockets-helpers
-      sprockets-sass
-
 PATH
   remote: .
   specs:
@@ -59,6 +48,12 @@ GEM
       redcarpet (~> 3.1)
       safe_yaml (~> 1.0)
       toml (~> 0.1.0)
+    jekyll-assets (0.10.0)
+      jekyll (~> 2.0)
+      sass (~> 3.2)
+      sprockets (~> 2.10)
+      sprockets-helpers
+      sprockets-sass
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
     jekyll-gist (1.1.0)
@@ -121,7 +116,7 @@ DEPENDENCIES
   coffee-script
   eco
   jekyll (~> 2.0)
-  jekyll-assets!
+  jekyll-assets
   kramdown (~> 1.3)
   puma (~> 2.0.1)
   pygmentize (~> 0.0.3)

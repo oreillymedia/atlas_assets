@@ -7,7 +7,7 @@ gemspec
 gem "rake", "~> 10.0.4"
 gem "jekyll", "~> 2.0"
 gem "sass", "~> 3.2.9"
-gem 'jekyll-assets', :git => "git://github.com/ixti/jekyll-assets.git"
+gem 'jekyll-assets'
 gem 'coffee-script'
 gem 'rack-contrib', "~> 1.1.0"
 gem "rack-rewrite", "~> 1.3.3"
