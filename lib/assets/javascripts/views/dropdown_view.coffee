@@ -13,10 +13,12 @@ classes.DropdownView = Backbone.View.extend
       @set_default(model)
 
   set_default: (model) ->
-    model.set('selected', 'selected') if model.get('label') is @opts.default_to
+    if model.get('value') is "#{@opts.default_to}" or  model.get('label') is "#{@opts.default_to}"
+      model.set('selected', 'selected')
 
   add: (params) ->
     model = params.model
+    model.set 'value', model.get(@opts.value || 'value') || model.get(@opts.label || 'label')
     model.set 'label', model.get(@opts.label || 'label')
     @collection.add(model)
     @set_default(model)
@@ -29,7 +31,7 @@ classes.DropdownView = Backbone.View.extend
     this.delegateEvents();
     @$('.dropdown-list').chosen({width: @opts.width, disable_search_threshold: @opts.disable_search_threshold}).change((e,selected) =>
       model = @collection.find (m) ->
-        selected.selected is m.get('label')
+        selected.selected is m.get('value')
       this.trigger(app.events.SELECT, model)
     )
     @
@@ -43,4 +45,4 @@ classes.DropdownView = Backbone.View.extend
     @render().el
 
   get_selected: () ->
-    @collection.find (model) => @$('select').val() is model.get('label')
+    @collection.find (model) => @$('select').val() is model.get('value')
