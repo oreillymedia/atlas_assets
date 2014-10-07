@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    atlas_assets (0.8.7)
+    atlas_assets (0.8.8)
       handlebars_assets (~> 0.15)
 
 GEM
