@@ -83,6 +83,7 @@ class classes.SelectView extends Backbone.View
         selected_model = t.collection.find((model) -> model.get(t.value) is v.value)
       else
         selected_model = t.collection.find((model) -> model.get(t.label) is v.value)
+      
       t.trigger('change', selected_model)
     )
 
