@@ -4,7 +4,13 @@
 <% end %>
 <select class="dropdown-list" <%= if @multiple: %>multiple<% end %> <%= if @placeholder?: %>data-placeholder='<%= @placeholder %>'<% end %>>
   <% for model in @models: %>
-  <option <% if model.selected?: %>selected<% end %> <% if model.disabled: %>disabled<% end %>><%= model.get('label') %></option>
+  <option 
+    <% if model.get('selected'): %>selected<% end %>
+    <% if model.get('disabled'): %>disabled<% end %>
+    <% if model.get('value'): %>value="<%= model.get('value') %>"<% end %>
+  >
+    <%= model.get('label') %>
+  </option>
   <% end %>
 </select>
 <% if @helper?: %>

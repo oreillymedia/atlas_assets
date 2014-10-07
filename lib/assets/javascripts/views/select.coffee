@@ -15,20 +15,23 @@
 
 class classes.SelectView extends Backbone.View
 
-  defaults: {label: 'label'}
+  defaults: {label: 'label', value: 'value', sort : true}
 
   initialize: (options) ->
     @rendered = false
 
-    @label = if options.label then options.label else "label"
-    @helper = options.helper if options.helper?
-
+    @label = if options.label then options.label else @defaults.label
+    @value = if options.value then options.value else false
+    @default= if options.default then options.default else false
+    @sort = if options.sort? then options.sort else @defaults.sort
+    @helper =options.helper if options.helper?
+    
     # The select view needs a collection.
     if !@collection
       @collection = @collection_from_values(options.values)
     else if @collection.length > 0
       t = @
-      @collection.each (model,@label) -> t.set_model_label(model)
+      @collection.each (model) -> t.set_model_attributes(model)
 
     @template = JST["templates/select"]
     @listenTo(@collection, 'add', @add_model)
@@ -39,23 +42,33 @@ class classes.SelectView extends Backbone.View
     @collection = new Backbone.Collection(_.map(values, (v) ->
       return {"label": v}
     ))
-    @collection.comparator = "label"
-    @collection.sort()
+    @collection.comparator = "label" if @sort
+    return @collection.sort() if @sort
+    return @collection
+    
 
   add_model: (m) ->
-    @set_model_label(m)
+    @set_model_attributes(m)
     select_el = @$el.find('select').first()
-    select_el.append("<option>#{m.get('label')}</option>")
+    value = "value='" + m.get('value') + "'" if m.get('value')
+    select_el.append("<option #{value}>#{m.get('label')}</option>")
 
     sort_by_name = (a, b) ->
       a.innerHTML.toLowerCase().localeCompare(b.innerHTML.toLowerCase())
 
-    options = select_el.children().get().sort(sort_by_name)
+    options = select_el.children().get()
+    options = options.sort(sort_by_name) if @sort
     for opt in options
       select_el.append(opt)
 
-  set_model_label: (model) =>
+  set_model_attributes: (model) =>
     model.set('label',model.get(@label))
+    model.set('value',model.get(@value)) if @value
+    if @default and @value and @default is model.get(@value)
+      model.set('selected',true) 
+    else if @default and !@value and @default is model.get(@label)
+      model.set('selected',true) 
+    else
 
   bind_select: ->
     t = @
@@ -66,19 +79,26 @@ class classes.SelectView extends Backbone.View
     })
 
     @select.on('change', (v) ->
-      selected_model = t.collection.find((model) -> model.get(t.label) is v.value)
+      if t.value
+        selected_model = t.collection.find((model) -> model.get(t.value) is v.value)
+      else
+        selected_model = t.collection.find((model) -> model.get(t.label) is v.value)
       t.trigger('change', selected_model)
     )
 
   get_value: -> @select.value
   get_model: ->
     value = @select.value
-    @collection.find (model) => model.get('label') is value
+    if model.get('value')
+      @collection.find (model) => model.get('value') is value
+    else
+      @collection.find (model) => model.get('label') is value
 
   set: (value) -> @select.change(value)
 
   render: =>
-    @collection.comparator = "label"
-    @$el.html(@template({models:@collection.sort().models, helper:@helper})).addClass("select-dropdown")
+    @collection.comparator = if @value then "value" else "label"
+    models = if @sort then @collection.sort().models else @collection.models
+    @$el.html(@template({models:models, helper:@helper})).addClass("select-dropdown")
     @trigger('rendered') if !@rendered
-    @
+
