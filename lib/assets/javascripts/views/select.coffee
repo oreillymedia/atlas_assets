@@ -22,7 +22,7 @@ class classes.SelectView extends Backbone.View
 
     @label = if options.label then options.label else @defaults.label
     @value = if options.value then options.value else false
-    @default= if options.default then options.default else false
+    @default_to= if options.default_to then options.default_to else false
     @sort = if options.sort? then options.sort else @defaults.sort
     @helper =options.helper if options.helper?
     
@@ -64,9 +64,9 @@ class classes.SelectView extends Backbone.View
   set_model_attributes: (model) =>
     model.set('label',model.get(@label))
     model.set('value',model.get(@value)) if @value
-    if @default and @value and @default is model.get(@value)
+    if @default_to and @value and @default_to is model.get(@value)
       model.set('selected',true) 
-    else if @default and !@value and @default is model.get(@label)
+    else if @default_to and !@value and @default_to is model.get(@label)
       model.set('selected',true) 
     else
 
