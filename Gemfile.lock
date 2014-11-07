@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     atlas_assets (0.8.9)
-      handlebars_assets (~> 0.15)
+      handlebars_assets (= 0.17.1)
 
 GEM
   remote: https://rubygems.org/
@@ -26,7 +26,7 @@ GEM
     execjs (2.2.1)
     fast-stemmer (1.0.2)
     ffi (1.9.5)
-    handlebars_assets (0.18)
+    handlebars_assets (0.17.1)
       execjs (>= 1.2.9)
       multi_json
       sprockets (>= 2.0.3)
