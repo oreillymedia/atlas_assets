@@ -19,6 +19,8 @@ class classes.SelectView extends Backbone.View
 
   initialize: (options) ->
     @rendered = false
+    
+    console.log "in select intialize"
 
     @label = if options.label then options.label else @defaults.label
     @value = if options.value then options.value else false
@@ -28,11 +30,19 @@ class classes.SelectView extends Backbone.View
     
     # The select view needs a collection.
     if !@collection
+      console.log "creating collection"
       @collection = @collection_from_values(options.values)
     else if @collection.length > 0
+      console.log "using existing collection"
       t = @
-      @collection.each (model) -> t.set_model_attributes(model)
+      @collection.each (model) ->
+        t.set_model_attributes(model)
+    else 
+      console.log "no collection or values"
+      throw new Error "Select needs either a collection or an array of values"
 
+    console.log @collection
+     
     @template = JST["templates/select"]
     @listenTo(@collection, 'add', @add_model)
     @listenTo(@collection, 'remove', @render)
@@ -50,8 +60,9 @@ class classes.SelectView extends Backbone.View
   add_model: (m) ->
     @set_model_attributes(m)
     select_el = @$el.find('select').first()
-    value = "value='" + m.get('value') + "'" if m.get('value')
-    select_el.append("<option #{value}>#{m.get('label')}</option>")
+    value = if m.get('value') then "value='#{m.get('value')}'" else ""
+    label = if m.get('label') then "label='#{m.get('label')}'" else ""
+    select_el.append("<option #{value}>#{label}</option>")
 
     sort_by_name = (a, b) ->
       a.innerHTML.toLowerCase().localeCompare(b.innerHTML.toLowerCase())
@@ -62,6 +73,7 @@ class classes.SelectView extends Backbone.View
       select_el.append(opt)
 
   set_model_attributes: (model) =>
+    console.log "set_model_attributes"
     model.set('label',model.get(@label))
     model.set('value',model.get(@value)) if @value
     if @default_to and @value and @default_to is model.get(@value)
