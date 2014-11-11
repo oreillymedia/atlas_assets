@@ -93,7 +93,7 @@ class classes.SelectView extends Backbone.View
   get_model: ->
     value = @select.value
     if @value
-      @collection.find (model) => model.get('value') is value
+      @collection.find (model) => model.get('value') is value or model.get('label') is value
     else
       @collection.find (model) => model.get('label') is value
 
