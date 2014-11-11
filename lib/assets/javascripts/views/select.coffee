@@ -19,29 +19,22 @@ class classes.SelectView extends Backbone.View
 
   initialize: (options) ->
     @rendered = false
-    
-    console.log "in select intialize"
 
-    @label = if options.label then options.label else @defaults.label
-    @value = if options.value then options.value else false
-    @default_to= if options.default_to then options.default_to else false
-    @sort = if options.sort? then options.sort else @defaults.sort
-    @helper =options.helper if options.helper?
+    @label      = if options.label? then options.label else @defaults.label
+    @value      = if options.value? then options.value else false
+    @default_to = if options.default_to? then options.default_to else false
+    @sort       = if options.sort? then options.sort else @defaults.sort
+    @helper     = options.helper if options.helper?
     
     # The select view needs a collection.
     if !@collection
-      console.log "creating collection"
       @collection = @collection_from_values(options.values)
     else if @collection.length > 0
-      console.log "using existing collection"
       t = @
       @collection.each (model) ->
         t.set_model_attributes(model)
     else 
-      console.log "no collection or values"
       throw new Error "Select needs either a collection or an array of values"
-
-    console.log @collection
      
     @template = JST["templates/select"]
     @listenTo(@collection, 'add', @add_model)
@@ -61,19 +54,16 @@ class classes.SelectView extends Backbone.View
     @set_model_attributes(m)
     select_el = @$el.find('select').first()
     value = if m.get('value') then "value='#{m.get('value')}'" else ""
-    label = if m.get('label') then "label='#{m.get('label')}'" else ""
-    select_el.append("<option #{value}>#{label}</option>")
+    select_el.append("<option #{value}>#{m.get('label')}</option>")
 
     sort_by_name = (a, b) ->
-      a.innerHTML.toLowerCase().localeCompare(b.innerHTML.toLowerCase())
-
+      a.innerHTML.trim().toLowerCase().localeCompare(b.innerHTML.trim().toLowerCase())
     options = select_el.children().get()
     options = options.sort(sort_by_name) if @sort
     for opt in options
       select_el.append(opt)
 
   set_model_attributes: (model) =>
-    console.log "set_model_attributes"
     model.set('label',model.get(@label))
     model.set('value',model.get(@value)) if @value
     if @default_to and @value and @default_to is model.get(@value)
@@ -92,9 +82,9 @@ class classes.SelectView extends Backbone.View
 
     @select.on('change', (v) ->
       if t.value
-        selected_model = t.collection.find((model) -> model.get(t.value) is v.value)
+        selected_model = t.collection.find( (model) -> model.get(t.value) is v.value)
       else
-        selected_model = t.collection.find((model) -> model.get(t.label) is v.value)
+        selected_model = t.collection.find( (model) -> model.get(t.label) is v.value)
       
       t.trigger('change', selected_model)
     )
@@ -102,7 +92,7 @@ class classes.SelectView extends Backbone.View
   get_value: -> @select.value
   get_model: ->
     value = @select.value
-    if model.get('value')
+    if @value
       @collection.find (model) => model.get('value') is value
     else
       @collection.find (model) => model.get('label') is value
