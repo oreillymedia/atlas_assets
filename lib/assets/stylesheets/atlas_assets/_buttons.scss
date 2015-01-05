@@ -127,6 +127,8 @@ _________________________________________________________________ */
 .btn.btn-disabled, .btn.disabled {
   cursor: not-allowed;
 	color: $mid_gray;
+  background-color: $defaultBackgroundColor;
+  border-color: $defaultBorderColor;
 
   &:hover {
     border: 1px solid $defaultBorderColor;
