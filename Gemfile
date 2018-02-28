@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.3.3'
 
 # Specify your gem's dependencies in atlas_assets.gemspec
 gemspec
@@ -14,5 +14,5 @@ gem "rack-rewrite", "~> 1.3.3"
 gem "pygmentize", "~> 0.0.3"
 gem "kramdown", "~> 1.3"
 gem "coderay", "~> 1.0.9"
-gem "puma", "~> 2.0.1"
+gem "puma", "~> 3.11.0"
 gem "eco"
