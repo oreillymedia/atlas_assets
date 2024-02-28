@@ -15,7 +15,7 @@ GEM
       sprockets (>= 2.0.0)
       tilt (>= 1.2)
     multi_json (1.15.0)
-    rack (3.0.8)
+    rack (3.0.9.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
